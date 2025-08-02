@@ -1,0 +1,33 @@
+:root {
+    --bg-dark: hsl(0, 0%, 25%);
+    --bg-darker: hsl(0, 0%, 15%);
+    --bg-darkest: hsl(0, 0%, 5%);
+    --bg-light: hsl(0, 0%, 90%);
+    --bg-lighter: hsl(0, 0%, 95%);
+    --bg-lightest: hsl(0, 0%, 98%);
+
+    --color-border: hsl(0, 0%, 85%);
+    --color-font-notdark: hsl(0, 0%, 50%);
+    --color-font-dark: hsl(0, 0%, 30%);
+    --color-font-darker: hsl(0, 0%, 25%);
+    --color-font-darkest: hsl(0, 0%, 15%);
+    --color-font-light: hsl(0, 0%, 90%);
+    --color-font-lighter: hsl(0, 0%, 95%);
+    --color-font-lightest: hsl(0, 0%, 100%);
+
+    --color-accent: hsl(16, 100%, 66%);
+    --color-primary: hsl(215, 60%, 43%);
+    --color-primary-hover: hsla(215, 60%, 43%, 0.90);
+
+    --font: 'Inter', 'sans-serif';
+    
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.25rem;
+    --font-xl: 1.5rem;
+    --font-2xl: 2rem;
+    --font-2_5xl: 2.5rem;
+    --font-3xl: 3rem;
+    --font-4xl: 3.25rem;
+}

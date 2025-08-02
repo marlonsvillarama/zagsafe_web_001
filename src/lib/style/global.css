@@ -7,5 +7,25 @@
 }
 
 body {
+    background-color: var(--color-primary);
+    color: var(--color-font-dark);
+    font-family: var(--font);
     font-size: 16px;
+}
+a:active {
+    transform: translateY(1px);
+}
+button:active {
+    transform: translateY(1px);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-lightest);
+    /* gap: 5rem; */
+}
+p {
+    font-size: var(--font-sm);
+    font-weight: 200;
+    line-height: 1.75rem;
 }
