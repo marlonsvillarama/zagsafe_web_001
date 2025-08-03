@@ -29,6 +29,7 @@
     width: 1px;
 }
 .grid-col-3 {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }

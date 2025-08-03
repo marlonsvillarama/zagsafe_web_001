@@ -24,8 +24,22 @@ main {
     background-color: var(--bg-lightest);
     /* gap: 5rem; */
 }
+main.page {
+    margin-top: 5rem;
+}
+main > .content {
+    background-color: var(--color-bg-lightest);
+    padding: 7rem 0;
+    gap: 7rem;
+}
 p {
     font-size: var(--font-sm);
     font-weight: 200;
     line-height: 1.75rem;
+}
+.page-title {
+    color: var(--color-accent);
+    font-size: var(--font-3xl);
+    font-weight: bold;
+    text-align: center;
 }

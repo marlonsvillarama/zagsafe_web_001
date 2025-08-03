@@ -36,3 +36,8 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+
+
+https://play.google.com/store/apps/details?id=com.veeva.vault.mobile&hl=en&pli=1
+
+https://uniportal.huawei.com/uniportal1/login-pc.html?redirect=https%3A%2F%2Fisdp-dg.huawei.com%2Fsdcloud%2Fportal%2Findex.html&x_app_id=com.huawei.sd.isdp.sdcp

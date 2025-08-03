@@ -15,7 +15,7 @@
     <Hero />
 
     <div class="content flex-col">
-        <div class="wrapper grid grid-col-2">
+        <div class="wrapper grid-col-2">
             <div class="blurb flex-col">
                 <h1>Build safety into your DNA</h1>
                 <p>ZagSafe's Zero-Accident Goal &trade; system is based on international best practices for <strong>HSWA 2015</strong> and <strong>ISO 45001:2018</strong>, helping ensure that you get the best solutions tailored for your business.</p>
@@ -26,13 +26,12 @@
             </div>
         </div>
 
-        <div class="wrapper grid grid-col-3">
+        <div class="wrapper grid-col-3">
             <Card
                 img={CardImage_1}
                 title="Consulting Services"
                 text="At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization."
-            >
-            </Card>
+            />
 
             <Card
                 img={CardImage_2}
@@ -44,9 +43,7 @@
                 img={CardImage_3}
                 title="Inspections and Audits"
                 text="At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization."
-            >
-                <img src="../lib/images/work-005.webp" alt="Consulting Services">
-            </Card>
+            />
         </div>
 
         <div class="wrapper grid grid-col-2">
@@ -76,11 +73,6 @@
 </main>
 
 <style>
-    .content {
-        background-color: var(--color-bg-lightest);
-        padding: 7rem 0;
-        gap: 7rem;
-    }
     .blurb h1 {
         color: var(--color-accent);
         font-weight: 600;

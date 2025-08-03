@@ -4,7 +4,7 @@
 
 <footer>
     <div class="wrapper grid-col-4">
-        <img class="footer-logo" src={Logo} />
+        <img class="footer-logo" src={Logo} alt="ZagSafe" />
 
         <div class="footer-col flex-col">
             <div class="title">Solutions</div>
