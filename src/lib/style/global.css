@@ -32,10 +32,12 @@ main > .content {
     padding: 7rem 0;
     gap: 7rem;
 }
-p {
+p,
+ol,
+ul {
     font-size: var(--font-sm);
     font-weight: 200;
-    line-height: 1.75rem;
+    line-height: 2rem;
 }
 .page-title {
     color: var(--color-accent);

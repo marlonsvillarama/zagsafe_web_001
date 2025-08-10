@@ -44,6 +44,12 @@
 .justify-between {
     justify-content: space-between;
 }
+.pos-absolute {
+    position: absolute;
+}
+.pos-relative {
+    position: relative;
+}
 .wrapper {
     margin: 0 5%;
 }

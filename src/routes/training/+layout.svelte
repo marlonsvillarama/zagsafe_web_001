@@ -3,7 +3,16 @@
 </script>
 
 <main class="page">
-    {@render children()}
+    <div class="wrapper training">
+        {@render children()}
+    </div>
 </main>
 
-<style></style>
+<style>
+    .training {
+        padding: 2rem 0 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+</style>

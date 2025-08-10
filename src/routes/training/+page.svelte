@@ -1,31 +1,36 @@
 <script>
     import TrainingSuite from '$lib/images/training002.webp';
-    import TrainingFocus from '$lib/images/training003.webp';
+    import TrainingFocus from '$lib/images/training003.png';
+    import TrainingGlobal from '$lib/images/training004_2.png';
     import HeroImage from '$lib/images/training001.webp';
     import PageHero from "$lib/components/PageHero.svelte";
     import Card from '$lib/components/Card.svelte';
+    import ImageCard from '$lib/components/ImageCard.svelte';
 </script>
 
 <!-- <PageHero img={HeroImage} title="Training" /> -->
 <div class="content flex-col">
     <h1 class="page-title">TRAINING</h1>
     <div class="wrapper grid-col-3">
-        <Card
+        <ImageCard
             img={TrainingSuite}
             title="Suite"
-            text="At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization."
+            text="A comprehensive three-tiered program designed for any level."
+            link="/training/suite"
         />
 
-        <Card
+        <ImageCard
             img={TrainingFocus}
             title="Focus"
-            text="At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization."
+            text="Short skills-focused courses compliant with New Zealand safety regulations."
+            link="/training/focus"
         />
 
-        <Card
-            img={TrainingSuite}
-            title="Inspections and Audits"
-            text="At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization."
+        <ImageCard
+            img={TrainingGlobal}
+            title="Global"
+            text="Advanced safety training programs designed for the international market."
+            link="/training/global"
         />
     </div>
 </div>
