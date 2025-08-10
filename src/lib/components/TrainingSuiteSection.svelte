@@ -147,6 +147,9 @@
     .program {
         grid-area: program;
     }
+    .course {
+        grid-area: course;
+    }
     .booknow {
         grid-area: booknow;
     }
