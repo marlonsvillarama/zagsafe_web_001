@@ -2,7 +2,7 @@
     import Logo from '$lib/images/svg/logo-white.svg';
     // import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
     // import ChevronUpIcon from '@lucide/svelte/icons/chevron-up';
-    import PhoneIcon from '@lucide/svelte/icons/phone';
+    // import PhoneIcon from '@lucide/svelte/icons/phone';
 </script>
 
 <header>
@@ -15,7 +15,7 @@
             <a href="/about">About</a>
         </div>
         <a class="contact" href="/contact">
-            <PhoneIcon />
+            <!-- <PhoneIcon /> -->
             <span>022 529 3564</span>
         </a>
     </div>

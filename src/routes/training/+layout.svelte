@@ -4,7 +4,7 @@
 
 <main class="page">
     <div class="wrapper training">
-        {@render children()}
+        {@render children?.()}
     </div>
 </main>
 

@@ -4,7 +4,7 @@
         audience = [],
         benefits = [],
         deliveries = [],
-        description = 'Program description',
+        description = [],
         duration = '1 day',
         course = []
     } = $props();
