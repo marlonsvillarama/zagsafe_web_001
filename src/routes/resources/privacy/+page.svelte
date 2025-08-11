@@ -10,11 +10,11 @@
         <h1 class="page-title">PRIVACY STATEMENT</h1>
 
         <div class="par">
-            At <strong>ZagSafe</strong>, we are committed to protecting the privacy and confidentiality of all personal and business information collected during the course of providing consulting services.
+            At <strong>ZagSafe</strong>, I am committed to protecting the privacy and confidentiality of all personal and business information collected during the course of providing consulting services.
         </div>
 
         <div class="par">
-            We collect, store, and use personal information solely for the purpose of delivering effective health and safety consulting tailored to your needs. This information may include contact details, business operations data, and health and safety records relevant to the consulting engagement.
+            I collect, store, and use personal information solely for the purpose of delivering effective health and safety consulting tailored to your needs. This information may include contact details, business operations data, and health and safety records relevant to the consulting engagement.
         </div>
 
         <div class="par">
@@ -56,13 +56,13 @@
     .par {
         line-height: 2rem;
         font-size: var(--font-sm);
-        font-weight: 200;
+        font-weight: 300;
     }
     .par ul {
         list-style-position: inside;
         padding-left: 2rem;
         font-size: var(--font-sm);
-        font-weight: 200;
+        font-weight: 300;
     }
     .email {
         font-weight: 500;

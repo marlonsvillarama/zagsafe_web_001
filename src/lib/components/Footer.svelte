@@ -16,17 +16,16 @@
 
         <div class="footer-col flex-col">
             <div class="title">Training</div>
-            <a href="/solutions/">ZagSafe Suite</a>
-            <a href="/solutions/">ZagSafe Focus</a>
-            <a href="/solutions/">ZagSafe Global</a>
+            <a href="/training/suite">ZagSafe Suite</a>
+            <a href="/training/focus">ZagSafe Focus</a>
+            <a href="/training/global">ZagSafe Global</a>
         </div>
 
         <div class="footer-col flex-col">
             <div class="title">Resources</div>
-            <a href="/solutions/">Health and Safety at Work Act 2015</a>
-            <a href="/solutions/">Privacy Statement</a>
-            <a href="/solutions/">Quality Statement</a>
-            <a href="/solutions/">Safety Policy Statement</a>
+            <a href="/resources/privacy">Privacy Statement</a>
+            <a href="/resources/quality">Quality Statement</a>
+            <a href="/resources/safety">Safety Policy Statement</a>
         </div>
     </div>
 </footer>

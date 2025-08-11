@@ -9,6 +9,7 @@
     <div class="content">
         <div class="left">
             <img src={Logo} class="logo" alt="ZagSafe">
+            <a href="/">Home</a>
             <a href="/solutions">Solutions</a>
             <a href="/training">Training</a>
             <a href="/resources">Resources</a>

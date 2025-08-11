@@ -49,13 +49,13 @@
     .par {
         line-height: 2rem;
         font-size: var(--font-sm);
-        font-weight: 200;
+        font-weight: 300;
     }
     .par ul {
         list-style-position: inside;
         padding-left: 2rem;
         font-size: var(--font-sm);
-        font-weight: 200;
+        font-weight: 300;
     }
     .email {
         font-weight: 500;

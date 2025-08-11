@@ -36,7 +36,7 @@ p,
 ol,
 ul {
     font-size: var(--font-sm);
-    font-weight: 200;
+    font-weight: 300;
     line-height: 2rem;
 }
 .page-title {
