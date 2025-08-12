@@ -37,7 +37,7 @@
         </div>
 
         <div class="par">
-            If you have any questions or concerns regarding your privacy or the management of your information, please email <a class="email" href="mailto:ken.zagala@zagsafe.com">ken.zagala@zagsafe.com</a>.
+            If you have any questions or concerns regarding your privacy or the management of your information, please email <a class="email" href="mailto:kenz@zagsafe.com">kenz@zagsafe.com</a>.
         </div>
 
         <div class="par">Signed,</div>

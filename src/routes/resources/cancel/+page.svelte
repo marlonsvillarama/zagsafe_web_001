@@ -65,7 +65,7 @@
             <li>
                 <h2>How to Request for a Refund</h2>
                 <ul>
-                    <li>All refund requests must be submitted in writing to <a class="email" href="mailto:ken.zagala@zagsafe.com">ken.zagala@zagsafe.com</a> <span class="emp">within 7 days of the scheduled service or training date</span>.</li>
+                    <li>All refund requests must be submitted in writing to <a class="email" href="mailto:sales@zagsafe.com">sales@zagsafe.com</a> <span class="emp">within 7 days of the scheduled service or training date</span>.</li>
                     <li>Approved refunds will be processed within <span class="emp">10 working days</span>.</li>
                 </ul>
             </li>
@@ -83,14 +83,6 @@
                 <li>Stored securely to prevent unauthorized access, loss, or misuse.</li>
                 <li>Not disclosed to any third parties without your explicit consent, unless required by law.</li>
             </ul>
-        </div>
-
-        <div class="par">
-            You have the right to access the personal information held about you and request corrections if necessary.
-        </div>
-
-        <div class="par">
-            If you have any questions or concerns regarding your privacy or the management of your information, please email <a class="email" href="mailto:ken.zagala@zagsafe.com">ken.zagala@zagsafe.com</a>.
         </div>
 
         <div class="par">Signed,</div>
