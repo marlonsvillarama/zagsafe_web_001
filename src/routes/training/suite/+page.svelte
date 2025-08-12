@@ -2,7 +2,14 @@
     import ImageSuite from '$lib/images/training002.jpg';
 
     import Availability from '$lib/components/Availability.svelte';
+    import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
     import TrainingSuiteSection from '$lib/components/TrainingSuiteSection.svelte';
+
+    const crumbs = [
+        { link: '/', text: 'Home' },
+        { link: '/training', text: 'Training' },
+        { link: '/training/suite', text: 'ZagSafe Training Suite' }
+    ];
 
     const START = {
         audience: [
@@ -111,9 +118,7 @@
     };
 </script>
 
-<div class="breadcrumbs">
-    Breadcrumbs
-</div>
+<Breadcrumbs {crumbs} />
 
 <h1 class="title">ZagSafe Training Suite</h1>
 

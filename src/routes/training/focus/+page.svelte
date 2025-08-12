@@ -2,7 +2,14 @@
     import ImageFocus from '$lib/images/training003.png';
 
     import Availability from '$lib/components/Availability.svelte';
+    import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
     import TrainingCourseCard from '$lib/components/TrainingCourseCard.svelte';
+
+    const crumbs = [
+        { link: '/', text: 'Home' },
+        { link: '/training', text: 'Training' },
+        { link: '/training/focus', text: 'ZagSafe Focus Series' }
+    ];
 
     const courses = [
         {
@@ -151,9 +158,7 @@
     ];
 </script>
 
-<div class="breadcrumbs">
-    Breadcrumbs
-</div>
+<Breadcrumbs {crumbs} />
 
 <h1 class="title">ZagSafe Focus Series</h1>
 

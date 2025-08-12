@@ -16,9 +16,9 @@
 
         <div class="footer-col flex-col">
             <div class="title">Training</div>
-            <a href="/training/suite">ZagSafe Suite</a>
-            <a href="/training/focus">ZagSafe Focus</a>
-            <a href="/training/global">ZagSafe Global</a>
+            <a href="/training/suite">ZagSafe Training Suite</a>
+            <a href="/training/focus">ZagSafe Focus Series</a>
+            <a href="/training/global">ZagSafe Global Series</a>
         </div>
 
         <div class="footer-col flex-col">
@@ -26,6 +26,7 @@
             <a href="/resources/privacy">Privacy Statement</a>
             <a href="/resources/quality">Quality Statement</a>
             <a href="/resources/safety">Safety Policy Statement</a>
+            <a href="/resources/cancel">Cancellation and Refund Policy</a>
         </div>
     </div>
 </footer>

@@ -1,5 +1,7 @@
 <script>
     // import { Landmark, Monitor } from 'lucide-svelte';
+    import Landmark from '$lib/images/svg/landmark.svg';
+    import WiFi from '$lib/images/svg/wifi.svg';
 
     let {
         online = false,
@@ -9,15 +11,15 @@
 
 <div class="flex-row availability">
     {#if online === true}
-    <div class="flex-row avail">
-        <!-- <Monitor size={16} /> -->
+    <div class="flex-row align-center avail">
+        <img src={WiFi} alt="Online" height="20">
         <span>Available Online</span>
     </div>
     {/if}
 
     {#if onsite === true}
-    <div class="flex-row avail">
-        <!-- <Landmark size={16} /> -->
+    <div class="flex-row align-center avail">
+        <img src={Landmark} alt="Onsite" height="20">
         <span>On-site Training</span>
     </div>
     {/if}

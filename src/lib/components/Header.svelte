@@ -1,26 +1,74 @@
 <script>
+// @ts-nocheck
     import Logo from '$lib/images/svg/logo-white.svg';
-    // import ChevronDownIcon from '@lucide/svelte/icons/chevron-down';
-    // import ChevronUpIcon from '@lucide/svelte/icons/chevron-up';
-    // import PhoneIcon from '@lucide/svelte/icons/phone';
+    import ChevronDownIcon from '$lib/images/svg/chevron-down.svg';
+    import ChevronUpIcon from '$lib/images/svg/chevron-up.svg';
+    import PhoneIcon from '$lib/images/svg/phone.svg';
+
+    const togglePopover = (id) => {
+        const menuPopover = document.getElementById(`${id}-menu`);
+        menuPopover?.togglePopover();
+    };
 </script>
 
 <header>
     <div class="content">
-        <div class="left">
+        <div class="menu left align-center">
             <img src={Logo} class="logo" alt="ZagSafe">
             <a href="/">Home</a>
-            <a href="/solutions">Solutions</a>
-            <a href="/training">Training</a>
-            <a href="/resources">Resources</a>
-            <a href="/about">About</a>
+            <!-- svelte-ignore a11y_mouse_events_have_key_events -->
+            <button class="solutions nested" popovertarget="solutions-menu"
+                onmouseover={() => togglePopover('solutions')}
+            >
+                <span>Solutions</span>
+                <img src={ChevronDownIcon} alt="" height="20">
+            </button>
+            <!-- svelte-ignore a11y_mouse_events_have_key_events -->
+            <button class="training nested" popovertarget="training-menu"
+                onmouseover={() => togglePopover('training')}
+            >
+                <span>Training</span>
+                <img src={ChevronDownIcon} alt="" height="20">
+            </button>
+            <!-- svelte-ignore a11y_mouse_events_have_key_events -->
+            <button class="resources nested" popovertarget="resources-menu"
+                onmouseover={() => togglePopover('resources')}
+            >
+                <span>Resources</span>
+                <img src={ChevronDownIcon} alt="" height="20">
+            </button>
         </div>
         <a class="contact" href="/contact">
-            <!-- <PhoneIcon /> -->
+            <img src={PhoneIcon} alt="Call us" height="24">
             <span>022 529 3564</span>
         </a>
     </div>
 </header>
+
+<div popover id="solutions-menu" class="popover-menu">
+    <ul>
+        <li><a href="/solutions/">Solution 1</a></li>
+        <li><a href="/solutions/">Solution 2</a></li>
+        <li><a href="/solutions/">Solution 3</a></li>
+    </ul>
+</div>
+
+<div popover id="training-menu" class="popover-menu">
+    <ul>
+        <li><a href="/training/suite">ZagSafe Training Suite</a></li>
+        <li><a href="/training/focus">ZagSafe Focus Series</a></li>
+        <li><a href="/training/global">ZagSafe Global Series</a></li>
+    </ul>
+</div>
+
+<div popover id="resources-menu" class="popover-menu">
+    <ul>
+        <li><a href="/resources/privacy">Privacy Statement</a></li>
+        <li><a href="/resources/quality">Quality Statement</a></li>
+        <li><a href="/resources/safety">Safety Policy Statement</a></li>
+        <li><a href="/resources/cancel">Cancellation and Refund Policy</a></li>
+    </ul>
+</div>
 
 <style>
     header {
@@ -35,7 +83,7 @@
         z-index: 999;
     }
     header a {
-        color: var(--color-font-lighter);
+        color: var(--color-font-lightest);
         font-size: var(--font-md);
         font-weight: 600;
         display: inline-block;
@@ -63,6 +111,81 @@
         /* display: block; */
         height: 3.5rem;
         z-index: -1;
+    }
+    .menu > .nested {
+        border: 0;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+        cursor: pointer;
+        font-size: var(--font-md);
+    }
+    .menu > .nested > span {
+        color: var(--color-font-lightest);
+        font-weight: 500;
+        /* border-bottom: 2px solid transparent; */
+    }
+    .solutions {
+        anchor-name: --solutions-menu;
+    }
+    .training {
+        anchor-name: --training-menu;
+    }
+    .resources {
+        anchor-name: --resources-menu;
+    }
+    .popover-menu {
+        background-color: var(--bg-lighter);
+        border: 0;
+        /* padding: 0.25rem 0.75rem; */
+        border-radius: 0.5rem;
+        margin: 0;
+        inset: auto;
+        position: absolute;
+        top: anchor(bottom);
+        left: anchor(left);
+        margin-block-start: 0.25rem;
+        box-shadow: var(--shadow);
+    }
+    /* .popover-menu:popover-open {
+    } */
+    #solutions-menu {
+        position-anchor: --solutions-menu;
+    }
+    #training-menu {
+        position-anchor: --training-menu;
+    }
+    #resources-menu {
+        position-anchor: --resources-menu;
+    }
+    .popover-menu ul {
+        list-style-type: none;
+        list-style-position: inside;
+    }
+    .popover-menu ul li {
+        background-color: var(--bg-lighter);
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+    }
+    .popover-menu ul li a {
+        color: var(--color-font-dark);
+        font-weight: 400;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: inline-block;
+        width: 15rem;
+    }
+    .popover-menu ul li:not(:last-child) {
+        border-bottom: 1px solid var(--color-border);
+    }
+    .popover-menu ul li:hover {
+        background-color: var(--color-primary);
+        color: white;
+    }
+    .popover-menu ul li:hover a {
+        color: white;
     }
 
     .contact {

@@ -1,11 +1,16 @@
 <script>
+    import Breadcrumbs from "$lib/components/Breadcrumbs.svelte";
+
+    const crumbs = [
+        { link: '/', text: 'Home' },
+        { link: '/resources', text: 'Resources' },
+        { link: '/resources/privacy', text: 'Privacy Statement' }
+    ];
 </script>
 
 <main class="page">
     <div class="wrapper statement">
-        <div class="breadcrumbs">
-            Breadcrumbs
-        </div>
+        <Breadcrumbs {crumbs} />
 
         <h1 class="page-title">PRIVACY STATEMENT</h1>
 
