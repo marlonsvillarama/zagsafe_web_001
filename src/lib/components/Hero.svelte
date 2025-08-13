@@ -7,8 +7,8 @@
     <div class="hero-img" role="img"></div>
     <div class="wrapper hero-text">
         <h1>Workplace Safety Simplified</h1>
-        <h3>Build safety-first cultures for your workplace</h3>
-        <a href="/solutions">Find out how</a>
+        <h3>Build safety-first cultures for your workplace.</h3>
+        <a href="/training">Find out how</a>
     </div>
 </section>
 

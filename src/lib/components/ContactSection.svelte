@@ -7,20 +7,21 @@
     <span>Call or email for a free consultation.</span>
 </div>
 
-<div class="grid-col-2-sep">
-    <div class="contact-col flex-col">
-        <div class="flex-row justify-between align-center">
-            <span>Phone</span>
-            <span class="value flex-row">022 529 3564</span>
-        </div>
-        <div class="flex-row justify-between align-center">
-            <span>Address</span>
-            <span class="value flex-row">Christchurch</span>
-        </div>
+<!-- <div class="grid-col-2-sep"> -->
+<div class="contact-form">
+    <!-- <div class="contact-col flex-col">
     </div>
-    <div class="col-sep">&nbsp;</div>
+    <div class="col-sep">&nbsp;</div> -->
     <div class="contact-col flex-col">
-        <div class="flex-row justify-between align-center">
+        <div class="flex-row justify-between align-center contact-row">
+            <span>Phone</span>
+            <span class="value flex-row">+64 22 529 3564</span>
+        </div>
+        <div class="flex-row justify-between align-center contact-row">
+            <span>Address</span>
+            <span class="value flex-row">Christchurch, New Zealand</span>
+        </div>
+        <div class="flex-row justify-between align-center contact-row">
             <span>Email</span>
             <span class="value flex-row">info@zagsafe.com</span>
         </div>
@@ -49,6 +50,18 @@
         gap: 1.5rem;
         font-size: var(--font-sm);
         font-weight: 300;
+    }
+    /* .contact-col > div:not(:last-child) {
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--color-border);
+    } */
+    .contact-form {
+        width: 100%;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .contact-row {
+        width: 50%;
     }
     .value {
         font-weight: 700;

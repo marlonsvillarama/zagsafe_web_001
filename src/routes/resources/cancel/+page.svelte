@@ -70,27 +70,6 @@
                 </ul>
             </li>
         </ol>
-
-        <div class="par">
-            I collect, store, and use personal information solely for the purpose of delivering effective health and safety consulting tailored to your needs. This information may include contact details, business operations data, and health and safety records relevant to the consulting engagement.
-        </div>
-
-        <div class="par">
-            Your information will be handled in accordance with the <strong>Privacy Act 2020 (New Zealand)</strong> and other relevant legislation, ensuring it is:
-            <ul>
-                <li>Collected lawfully, fairly, and transparently.</li>
-                <li>Used only for the purposes for which it was collected.</li>
-                <li>Stored securely to prevent unauthorized access, loss, or misuse.</li>
-                <li>Not disclosed to any third parties without your explicit consent, unless required by law.</li>
-            </ul>
-        </div>
-
-        <div class="par">Signed,</div>
-
-        <div class="par">
-            <h1 class="sign">Ken Erol Zagala</h1>
-            <span>Health and Safety Adviser</span>
-        </div>
     </div>
 </main>
 

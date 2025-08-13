@@ -17,12 +17,12 @@
             <img src={Logo} class="logo" alt="ZagSafe">
             <a href="/">Home</a>
             <!-- svelte-ignore a11y_mouse_events_have_key_events -->
-            <button class="solutions nested" popovertarget="solutions-menu"
+            <!-- <button class="solutions nested" popovertarget="solutions-menu"
                 onmouseover={() => togglePopover('solutions')}
             >
                 <span>Solutions</span>
                 <img src={ChevronDownIcon} alt="" height="20">
-            </button>
+            </button> -->
             <!-- svelte-ignore a11y_mouse_events_have_key_events -->
             <button class="training nested" popovertarget="training-menu"
                 onmouseover={() => togglePopover('training')}

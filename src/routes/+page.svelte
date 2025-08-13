@@ -15,6 +15,7 @@
     <Hero />
 
     <div class="content flex-col">
+        <!-- <a id="build-safety"></a> -->
         <div class="wrapper grid-col-2">
             <div class="blurb flex-col">
                 <h1>Build safety into your DNA</h1>
@@ -22,7 +23,7 @@
             </div>
             <div class="blurb flex-col">
                 <h1>Why choose ZagSafe</h1>
-                <p>I will work with you to grow and improve your workplace afety culture, implement effective risk management systems, and make sure your business meets its health and safety legal obligations.</p>
+                <p>I will work with you to grow and improve your workplace safety culture, implement effective risk management systems, and make sure your business meets its health and safety legal obligations.</p>
             </div>
         </div>
 

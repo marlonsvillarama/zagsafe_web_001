@@ -101,12 +101,13 @@
     }
     .grid-area-training {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 3fr;
         grid-template-rows: auto;
         grid-template-areas:
-            "benefits ."
-            "program course"
-            "booknow .";
+            ". benefits"
+            ". program"
+            ". course"
+            ". booknow";
         column-gap: 4rem;
     }
     /* .grid-area-2xauto > * {
@@ -137,7 +138,7 @@
         padding: 1rem 2rem;
         border-radius: 1rem;
         top: 1rem;
-        right: 0;
+        left: 0;
         min-width: 30rem;
         max-width: 30rem;
     }

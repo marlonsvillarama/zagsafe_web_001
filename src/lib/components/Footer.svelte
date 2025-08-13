@@ -6,13 +6,13 @@
     <div class="wrapper grid-col-4">
         <img class="footer-logo" src={Logo} alt="ZagSafe" />
 
-        <div class="footer-col flex-col">
+        <!-- <div class="footer-col flex-col">
             <div class="title">Solutions</div>
             <a href="/solutions/">Health and Safety Auditing</a>
             <a href="/solutions/">Incident Investigation</a>
             <a href="/solutions/">Health and Safety Equipment Inspection</a>
             <a href="/solutions/">Safety Management System</a>
-        </div>
+        </div> -->
 
         <div class="footer-col flex-col">
             <div class="title">Training</div>
