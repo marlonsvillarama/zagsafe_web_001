@@ -9,6 +9,10 @@
         const menuPopover = document.getElementById(`${id}-menu`);
         menuPopover?.togglePopover();
     };
+
+    const gotoHome = () => {
+        window.location.href = '/';
+    };
 </script>
 
 <header>
@@ -16,7 +20,7 @@
         <div class="menu left align-center">
             <img src={Logo} class="logo" alt="ZagSafe">
             <div class="nested">
-                <button>Home</button>
+                <button onclick={gotoHome}>Home</button>
             </div>
             <!-- svelte-ignore a11y_mouse_events_have_key_events -->
             <!-- <button class="solutions nested" popovertarget="solutions-menu"

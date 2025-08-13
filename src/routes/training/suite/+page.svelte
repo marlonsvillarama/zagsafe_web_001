@@ -136,6 +136,7 @@
 </div>
 
 <TrainingSuiteSection
+    id="suite-start"
     title="Program 1 - ZagSafe START"
     benefits={START.benefits}
     audience={START.audience}
@@ -146,6 +147,7 @@
 />
 
 <TrainingSuiteSection
+    id="suite-pro"
     title={PRO.title}
     benefits={PRO.benefits}
     audience={PRO.audience}
@@ -156,6 +158,7 @@
 />
 
 <TrainingSuiteSection
+    id="suite-task"
     title={TASK.title}
     benefits={TASK.benefits}
     audience={TASK.audience}

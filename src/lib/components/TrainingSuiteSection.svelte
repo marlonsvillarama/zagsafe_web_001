@@ -1,5 +1,6 @@
 <script>
     let {
+        id = '',
         title = 'Title',
         audience = [],
         benefits = [],
@@ -8,6 +9,10 @@
         duration = '1 day',
         course = []
     } = $props();
+
+    const gotoInquire = () => {
+        window.location.href = `/inquire?id=${id}`;
+    };
 </script>
 
 <div class="flex-col training">
@@ -81,7 +86,7 @@
         </div>
 
         <div class="booknow">
-            <button type="button">BOOK NOW</button>
+            <button type="button" onclick={gotoInquire}>INQUIRE NOW</button>
         </div>
     </div>
 </div>

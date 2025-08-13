@@ -5,9 +5,13 @@
         text = '',
         link = '/training'
     } = $props();
+
+    const gotoLink = () => {
+        window.location.href = link;
+    };
 </script>
 
-<div class="img-card">
+<div class="img-card" onclick={gotoLink}>
     <img src={img} alt={title}>
     <div class="contents">
         <div class="cover">

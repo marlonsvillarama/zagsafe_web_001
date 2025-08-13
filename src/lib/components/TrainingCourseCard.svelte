@@ -18,7 +18,7 @@
             <h4 class="subtitle">{subtitle}</h4>
             {/if}
         </div>
-        <a href="/book?id={id}" class="book" target="_blank">Book Now</a>
+        <a href="/inquire?id={id}" class="book" target="_blank">Inquire Now</a>
     </div>
 
     {#if heading}
