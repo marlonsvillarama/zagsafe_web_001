@@ -77,6 +77,9 @@ const sendEmails = async (options) => {
                 }
             }
         };
+        if (email.cc) {
+        emailData.Destination.CcAddresses = [ email.cc ];
+        }
 
         let command = new SendEmailCommand(emailData);
         let response = {};

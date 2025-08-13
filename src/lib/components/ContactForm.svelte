@@ -8,8 +8,12 @@
     let success = $state(false);
 
     const sendInquiry = async () => {
-        pending = true;
+        if (!email || !text) {
+            alert('Please enter your email and inquiry before submitting.');
+            return;
+        }
 
+        pending = true;
         let sendResponse = await fetch(INQUIRY_URL, {
             method: 'POST',
             headers: {
@@ -28,6 +32,12 @@
         success = sendResponse.ok;
         success = true;
     };
+
+    const resetForm = () => {
+        email = '';
+        text = '';
+        success = false;
+    };
 </script>
 
 <div class="contact-form flex-col">
@@ -36,7 +46,7 @@
         <p>Thank you for submitting your inquiry. We will get back to you as soon as we can.</p>
     </div>
     <div class="contact-form flex-col">
-        <button onclick={() => success = false}>Submit another inquiry</button>
+        <button onclick={resetForm}>Submit another inquiry</button>
     </div>
 {:else}
     <div class="field-set flex-col">
