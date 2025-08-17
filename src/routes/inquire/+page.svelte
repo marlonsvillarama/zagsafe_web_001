@@ -1,6 +1,6 @@
 <script>
 // @ts-nocheck
-    import * as CountryCodes from 'country-codes-list';
+    import Countries from '$lib/data/countries.json';
     import Loader from '$lib/images/svg/loader-blue.svg';
     const INQUIRY_URL = 'https://9mvmdg9neg.execute-api.ap-southeast-2.amazonaws.com/default/inquiries';
 
@@ -13,9 +13,7 @@
         { link: '/inquire', text: 'Inquiry Form' }
     ];
 
-    let countries = $state([]);
-    // let countryList = $derived(countries.sort((a, b) => a.code - b.code));
-    let countryList = countries;
+    console.log('Countries', Countries);
 
     let pending = $state(false);
     let success = $state(false);
@@ -33,20 +31,35 @@
     const courseData = createCoursesData();
     const DEFAULT_MESSAGE = 'I would like to get more information on this course.';
 
-    $effect(() => {
+    /* $effect(() => {
         console.log('effect courseId', courseId);
         selectedCourse = courseData.getCourseById(courseId);
-    });
+    }); */
 
-    $effect(() => {
-        selectedCountry = countryList.find(c => c.code === selectedCountryId);
+    /* $effect(() => {
+        selectedCountry = Countries.find(c => c.code === selectedCountryId);
         console.log('effect on selectedCountry', selectedCountry);
 
+        // selectedCountryCode = selectedCountry?.code;
+        // console.log('effect on selectedCountryCode', selectedCountryCode);
+
+        // selectedCountryCallCode = selectedCountryCode ? selectedCountry.dial_code : '';
+    }); */
+
+    const changeCountry = () => {
+        selectedCountry = Countries.find(c => c.code === selectedCountryId);
+        console.log('effect on selectedCountry', selectedCountry);
+        
         selectedCountryCode = selectedCountry?.code;
         console.log('effect on selectedCountryCode', selectedCountryCode);
 
-        selectedCountryCallCode = selectedCountryCode ? `+${selectedCountry.callCode}` : '';
-    });
+        selectedCountryCallCode = selectedCountryCode ? selectedCountry.dial_code : '';
+    };
+
+    const changeCourse = () => {
+        console.log('effect courseId', courseId);
+        selectedCourse = courseData.getCourseById(courseId);
+    };
 
     const gotoSolutions = () => {
         window.location.href = '/solutions';
@@ -89,7 +102,7 @@
             return;
         }
 
-        if (!selectedCountryCode) {
+        if (!selectedCountry?.code) {
             alert('Please select the country where you are located.')
             return;
         }
@@ -143,11 +156,15 @@
         courseId = new URLSearchParams(location.search).get("id") || '';
         console.log('courseId', courseId);
 
-        countries = CountryCodes.customList(
+        if (courseId) {
+            changeCourse();
+        }
+
+        /* countries = CountryCodes.customList(
             "countryNameEn",
             `{"name": "{countryNameEn}", "code": "{countryCode}", "callCode": "{countryCallingCode}"}`
         );
-        countries = Object.values(countries).map(c => JSON.parse(c));
+        countries = Object.values(countries).map(c => JSON.parse(c)); */
         // countries.sort((a, b) => a.name - b.name);
         // console.log('countries', countries);
 
@@ -172,7 +189,7 @@
                     {#if success === true}
                         <span>{selectedCourse?.['title']}</span>
                     {:else}
-                        <select bind:value={courseId}>
+                        <select bind:value={courseId} onchange={changeCourse}>
                             {#each courseData.courses as course}
                                 <option value={course.id}>{course.title}</option>
                             {/each}
@@ -212,8 +229,8 @@
                     {#if success === true}
                         <span>{selectedCountry.name}</span>
                     {:else}
-                        <select bind:value={selectedCountryId}>
-                            {#each countryList as country}
+                        <select bind:value={selectedCountryId} onchange={changeCountry}>
+                            {#each Countries as country}
                                 <option value={country.code}>{country.name}</option>
                             {/each}
                         </select>
@@ -222,7 +239,7 @@
                 <div class="contact-row align-center">
                     <div class="label">Phone Number</div>
                     {#if success === true}
-                        <span>+{selectedCountryCallCode} {phone}</span>
+                        <span>{selectedCountryCallCode} {phone}</span>
                     {:else}
                         <div class="flex-row align-center fld-phone">
                             <input type="text" class="code" disabled bind:value={selectedCountryCallCode} />
