@@ -349,14 +349,12 @@ const allPrograms = $state([
     }
 ]);
 
-export const createServicesData = () => {
+export const createCoursesData = () => {
     return {
         get list () { return allPrograms },
 
         get courses () {
-            /**
-             * @type {never[]}
-            */
+            // @ts-ignore
             let output = allPrograms.reduce((a, b) => {
                 let mappedCourses = b.courses.map(c => {
                     return {
