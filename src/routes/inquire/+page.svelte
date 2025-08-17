@@ -14,7 +14,7 @@
     ];
 
     let countries = $state([]);
-    let countryList = $derived(countries.toSorted((a, b) => a.code.localeCompare(b.code)));
+    let countryList = $derived(countries.sort((a, b) => a.code - b.code));
 
     let pending = $state(false);
     let success = $state(false);
