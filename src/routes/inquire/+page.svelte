@@ -14,7 +14,8 @@
     ];
 
     let countries = $state([]);
-    let countryList = $derived(countries.sort((a, b) => a.code - b.code));
+    // let countryList = $derived(countries.sort((a, b) => a.code - b.code));
+    let countryList = countries;
 
     let pending = $state(false);
     let success = $state(false);
