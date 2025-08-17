@@ -84,13 +84,13 @@
     }
     .par {
         line-height: 2rem;
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         font-weight: 300;
     }
     .par ul {
         list-style-position: inside;
         padding-left: 2rem;
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         font-weight: 300;
     }
     .email {
@@ -123,7 +123,7 @@
         /* padding-left: 1rem; */
     }
     li > ul > li {
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         font-weight: 300;
         color: var(--color-font-dark);
     }

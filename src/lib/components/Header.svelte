@@ -10,8 +10,12 @@
         menuPopover?.togglePopover();
     };
 
-    const gotoHome = () => {
-        window.location.href = '/';
+    // const gotoHome = () => {
+    //     window.location.href = '/';
+    // };
+
+    const navigate = (link) => {
+        window.location.href = link;
     };
 </script>
 
@@ -20,7 +24,7 @@
         <div class="menu left align-center">
             <img src={Logo} class="logo" alt="ZagSafe">
             <div class="nested">
-                <button onclick={gotoHome}>Home</button>
+                <button onclick={() => navigate('/')}>Home</button>
             </div>
             <!-- svelte-ignore a11y_mouse_events_have_key_events -->
             <!-- <button class="solutions nested" popovertarget="solutions-menu"
@@ -30,19 +34,25 @@
                 <img src={ChevronDownIcon} alt="" height="20">
             </button> -->
             <!-- svelte-ignore a11y_mouse_events_have_key_events -->
+
             <div class="nested">
+                <button onclick={() => navigate('/training')}>Training</button>
+            </div>
+            
+            <!-- <div class="nested">
                 <button class="training">
                     <span>Training</span>
                     <img src={ChevronDownIcon} alt="" height="20">
                 </button>
                 <div id="training-menu" class="popover-menu">
                     <ul>
+                        <li class="menu-all"><a href="/training">Trainings Home</a></li>
                         <li><a href="/training/suite">ZagSafe Training Suite</a></li>
                         <li><a href="/training/focus">ZagSafe Focus Series</a></li>
                         <li><a href="/training/global">ZagSafe Global Series</a></li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
             <!-- <button class="training nested" popovertarget="training-menu"
                 onmouseover={() => togglePopover('training')}
             >
@@ -237,6 +247,9 @@
         background-color: var(--bg-lighter);
         cursor: pointer;
         transition: all 150ms ease-in-out;
+    }
+    .popover-menu ul li.menu-all {
+        border-bottom: 1px solid var(--color-border);
     }
     .popover-menu ul li a {
         color: var(--color-font-dark);

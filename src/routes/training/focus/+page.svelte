@@ -1,5 +1,5 @@
 <script>
-    import ImageFocus from '$lib/images/training003.png';
+    import ImageFocus from '$lib/images/training003_2.png';
 
     import Availability from '$lib/components/Availability.svelte';
     import Breadcrumbs from '$lib/components/Breadcrumbs.svelte';
@@ -166,11 +166,18 @@
     <div class="flex-col details">
         <Availability online={true} onsite={true} />
         <p>
+            <strong>ZagSafe Focus</strong> provides specialised training designed to address specific workplace risks across multiple industries and roles.
+        </p>
+        <p>
+            Each module is short, practical, and outcome-driven, giving participants the tools to manage targeted challenges such as hazard identification, mental health, ergonomics, emergency response, or leadership in safety culture.
+        </p>
+        <p>By concentrating on specific areas, <strong>ZagSafe Focus</strong> helps organisations strengthen critical aspects of their health and safety systems without unnecessary complexity.</p>
+        <!-- <p>
             The <strong>ZagSafe Focus Series</strong> is a is a collection of targeted 3-hour training modules designed to address key operational safety topics across all industries. Each session is skills-focused, outcome-driven, and compliant with the New Zealand regulations and international best practices.
         </p>
         <p>
             Ideal for upskilling workers, supervisors, and safety representatives, this series is perfect for toolbox refreshers, onboardng, and compliance requirements.
-        </p>
+        </p> -->
     </div>
     <img src={ImageFocus} alt="ZagSafe Focus Series">
 </div>
@@ -199,7 +206,7 @@
         gap: 1.25rem;
     }
     .details > p {
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
     }
     .grid-training-top > img {
         width: 100%;

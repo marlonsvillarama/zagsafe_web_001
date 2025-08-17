@@ -48,7 +48,7 @@
     .contact-col {
         /* border: 1px solid red; */
         gap: 1.5rem;
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         font-weight: 300;
     }
     /* .contact-col > div:not(:last-child) {
@@ -61,7 +61,7 @@
         margin: 0 auto;
     }
     .contact-row {
-        width: 50%;
+        width: 60%;
     }
     .value {
         font-weight: 700;

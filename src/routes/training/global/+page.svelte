@@ -145,6 +145,15 @@
     <div class="flex-col details">
         <Availability online={true} />
         <p>
+            The <strong>ZagSafe Global Series</strong> delivers international standard training that equips participants with the knowledge and tools to meet global best practice standards in health, safety, leadership, education, information technology, sustainabililty, business, and risk management.
+        </p>
+        <p>
+            Focused on high-risk industries and cross-border operations, this series bridges international frameworks such as ISO, ILO, and regional regulatory systems to help businesses align with global compliance expectations.
+        </p>
+        <p>
+            All <strong>ZagSafe Global Series</strong> training programs are fully-online and are conducted via live virtual classrooms supported by digital learning materials, case studies, and interactive activities.
+        </p>
+        <!-- <p>
             The <strong>ZagSafe Global Series</strong> features advanced training programs designed to upskill professionals, leaders, and facilitators in safety, sustainability, leadership, and operational excellence. These programs go beyond compliance to foster competence, innovation, and global alignment with best practices.
         </p>
         <p>
@@ -152,7 +161,7 @@
         </p>
         <p>
             Upon successful completion, participants will receive a <strong>ZagSafe International Certificate of Achievement</strong>, recognising their professional development aligned with global standards such as <strong>ISO</strong>, <stong>ICAO</stong>, <strong>PMBOK</strong>, <strong>WHO</strong>, and <strong>ILO</strong>.
-        </p>
+        </p> -->
     </div>
     <img src={ImageFocus} alt="ZagSafe Focus Series">
 </div>
@@ -183,7 +192,7 @@
         gap: 1.25rem;
     }
     .details > p {
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
     }
     .grid-training-top > img {
         width: 100%;

@@ -81,7 +81,7 @@
     }
     .field-help {
         color: var(--color-font-notdark);
-        font-size: var(--font-xs);
+        font-size: var(--font-sm);
     }
     .field-set input[type=email],
     .field-set textarea {
@@ -99,7 +99,7 @@
         border-radius: 0.5rem;
         background-color: var(--color-primary);
         color: var(--color-font-lightest);
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         font-weight: 600;
         /* display: inline-block; */
         padding: 0.75rem 1.5rem;

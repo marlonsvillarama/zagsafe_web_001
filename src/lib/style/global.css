@@ -35,7 +35,7 @@ main > .content {
 p,
 ol,
 ul {
-    font-size: var(--font-sm);
+    font-size: var(--font-md);
     font-weight: 300;
     line-height: 2rem;
 }

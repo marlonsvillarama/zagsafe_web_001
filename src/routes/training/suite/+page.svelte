@@ -126,10 +126,13 @@
     <div class="flex-col details">
         <Availability online={true} onsite={true} />
         <p>
-            The <strong>ZagSafe Training Suite</strong> is a comprehensive three-tiered professional development program designed to cater to varying levels of health and safety competence across industries.
+            The <strong>ZagSafe Training Suite</strong> is a comprehensive three-tiered professional development programmes designed to build safer workplaces and stronger professionals.
         </p>
         <p>
-            Whether you are an individual learner or a company with team-wide training needs, each program is delivered using interactive methods include case studies, group activities, simulations, and trainer-led discussions.
+            Each programme is structured to provide practical skills, regulatory compliance knowledge, and leadership capability to help individuals and organisations achieve world-class safety outcomes.
+        </p>
+        <p>
+            Whether you are an individual learner or a company with team-wide training needs, each programme is delivered using interactive methods include case studies, group activities, simulations, and trainer-led discussions.
         </p>
     </div>
     <img src={ImageSuite} alt="ZagSafe Training Suite">
@@ -181,7 +184,7 @@
         gap: 1.25rem;
     }
     .details > p {
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
     }
     .grid-training-top > img {
         width: 100%;
