@@ -36,6 +36,10 @@
             <!-- svelte-ignore a11y_mouse_events_have_key_events -->
 
             <div class="nested">
+                <button onclick={() => navigate('/solutions')}>Solutions</button>
+            </div>
+
+            <div class="nested">
                 <button onclick={() => navigate('/training')}>Training</button>
             </div>
             

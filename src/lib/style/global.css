@@ -30,7 +30,7 @@ main.page {
 main > .content {
     background-color: var(--color-bg-lightest);
     padding: 7rem 0;
-    gap: 7rem;
+    gap: 8rem;
 }
 p,
 ol,
