@@ -6,13 +6,17 @@
     import CardImage_2 from '$lib/images/work-004.webp';
     import CardImage_3 from '$lib/images/work-005.webp';
     import Ken_1 from '$lib/images/ken001.webp';
-    import NZISM from '$lib/images/practnzism.svg';
+    import NZISM from '$lib/images/svg/practnzism.svg';
     import LumberImage from '$lib/images/lumber.webp';
     import ToolsImage from '$lib/images/tools.webp';
     import MetalWorkImage from '$lib/images/metalwork.webp';
 
     import ContactSection from '$lib/components/ContactSection.svelte';
 </script>
+
+<svelte:head>
+    <title>ZagSafe - Workplace Safety Simplified</title>
+</svelte:head>
 
 <main>
     <Hero />

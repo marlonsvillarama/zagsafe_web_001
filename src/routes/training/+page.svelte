@@ -17,6 +17,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Training</title>
+</svelte:head>
+
 <Breadcrumbs {crumbs} />
 
 <!-- <PageHero img={HeroImage} title="Training" /> -->

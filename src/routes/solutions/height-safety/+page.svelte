@@ -9,6 +9,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Height Safety Equipment Inspection</title>
+</svelte:head>
+
 <Breadcrumbs {crumbs} />
 
 <h1 class="title">Height Safety Equipment Inspection</h1>

@@ -8,6 +8,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Quality Statement</title>
+</svelte:head>
+
 <main class="page">
     <div class="wrapper statement">
         <Breadcrumbs {crumbs} />

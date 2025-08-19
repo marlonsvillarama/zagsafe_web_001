@@ -178,6 +178,10 @@
     });
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Training Inquiry Form</title>
+</svelte:head>
+
 <main class="page">
     <div class="wrapper inquiry">
         <Breadcrumbs {crumbs} />

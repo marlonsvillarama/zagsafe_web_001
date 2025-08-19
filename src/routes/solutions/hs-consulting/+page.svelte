@@ -9,6 +9,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Health and Safety Advise and Consulting</title>
+</svelte:head>
+
 <Breadcrumbs {crumbs} />
 
 <h1 class="title">Health and Safety Advise and Consulting</h1>

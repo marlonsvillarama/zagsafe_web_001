@@ -8,6 +8,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Privacy Statement</title>
+</svelte:head>
+
 <main class="page">
     <div class="wrapper statement">
         <Breadcrumbs {crumbs} />

@@ -4,7 +4,13 @@
 
 <footer>
     <div class="wrapper grid-col-4">
-        <img class="footer-logo" src={Logo} alt="ZagSafe" />
+        <div class="flex-col align-start gap-4">
+            <!-- <div class="text-center"> -->
+            <img class="footer-logo" src={Logo} alt="ZagSafe" />
+            <div class="social flex-row gap-4 align-center">
+            </div>
+            <!-- </div> -->
+        </div>
 
         <div class="footer-col flex-col">
             <div class="title">Solutions</div>
@@ -39,6 +45,13 @@
     }
     img.footer-logo {
         height: 6rem;
+    }
+    .social a {
+        display: inline-block;
+        align-items: center;
+    }
+    .social a img {
+        height: 1.5rem;
     }
     .footer-col {
         gap: 0.25rem;
