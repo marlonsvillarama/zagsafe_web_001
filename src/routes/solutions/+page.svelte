@@ -58,7 +58,7 @@
                     </p>
                 </div>
 
-                <a href="/solutions/incident-inv" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/incident-inv" class="book" target="_blank">Learn more</a>
             </div>
             <img src={Solutions_02} width="100%" alt="Incident Investigation">
         </div>
@@ -77,7 +77,7 @@
                     </p>
                 </div>
 
-                <a href="/solutions/height-safety" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/height-safety" class="book" target="_blank">Learn more</a>
             </div>
         </div>
 
@@ -94,7 +94,7 @@
                     </p>
                 </div>
 
-                <a href="/solutions/workplace-audit" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/workplace-audit" class="book" target="_blank">Learn more</a>
             </div>
             <img src={Solutions_04} width="100%" alt="Workplace Audit">
         </div>
@@ -113,7 +113,7 @@
                     </p>
                 </div>
 
-                <a href="/solutions/system-dev" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/system-dev" class="book" target="_blank">Learn more</a>
             </div>
         </div>
 
