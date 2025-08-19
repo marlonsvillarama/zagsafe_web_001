@@ -8,7 +8,7 @@
     <div class="wrapper hero-text">
         <h1>Workplace Safety Simplified</h1>
         <h3>Build safety-first cultures for your workplace.</h3>
-        <a href="/training">Find out how</a>
+        <!-- <a href="/training">Find out how</a> -->
     </div>
 </section>
 
@@ -28,8 +28,9 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        padding: 1.5rem 2rem;
-        background-color: hsla(0, 0%, 50%, 80%);
+        padding: 1.5rem 2.5rem;
+        /* background-color: hsla(0, 0%, 50%, 80%); */
+        background-color: var(--color-primary);
         border: 0;
         border-radius: 1rem;
     }
@@ -37,16 +38,16 @@
         color: var(--color-font-lightest);
         /* color: var(--color-accent); */
         font-size: 2.5rem;
-        font-weight: 600;
-        margin-bottom: 0.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
     }
     .hero-text h3 {
         color: var(--color-font-light);
         font-size: 1.125rem;
-        font-weight: 200;
-        margin-bottom: 1.5rem;
+        font-weight: 300;
+        /* margin-bottom: 1.5rem; */
     }
-    .hero-text a {
+    /* .hero-text a {
         display: inline-block;
         padding: 1rem;
         background-color: var(--color-primary);
@@ -54,5 +55,5 @@
         color: var(--color-font-lightest);
         font-size: var(--font-sm);
         text-decoration: none;
-    }
+    } */
 </style>

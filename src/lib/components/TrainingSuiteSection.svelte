@@ -11,7 +11,7 @@
     } = $props();
 
     const gotoInquire = () => {
-        window.location.href = `/inquire?id=${id}`;
+        window.location.href = `/train?id=${id}`;
     };
 </script>
 

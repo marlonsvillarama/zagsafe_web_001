@@ -6,13 +6,14 @@
     <div class="wrapper grid-col-4">
         <img class="footer-logo" src={Logo} alt="ZagSafe" />
 
-        <!-- <div class="footer-col flex-col">
+        <div class="footer-col flex-col">
             <div class="title">Solutions</div>
-            <a href="/solutions/">Health and Safety Auditing</a>
-            <a href="/solutions/">Incident Investigation</a>
-            <a href="/solutions/">Health and Safety Equipment Inspection</a>
-            <a href="/solutions/">Safety Management System</a>
-        </div> -->
+            <a href="/solutions/hs-consulting">Advise and Consulting</a>
+            <a href="/solutions/incident-inv">Incident Investigation</a>
+            <a href="/solutions/height-safety">Height Safety Equipment Inspection</a>
+            <a href="/solutions/workplace-audit">Workplace Audit</a>
+            <a href="/solutions/system-dev">System Development</a>
+        </div>
 
         <div class="footer-col flex-col">
             <div class="title">Training</div>
