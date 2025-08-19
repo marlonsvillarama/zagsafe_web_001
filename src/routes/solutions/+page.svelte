@@ -1,6 +1,9 @@
 <script>
-    import TrainingMain_01 from '$lib/images/training_main_001.webp';
-    import TrainingMain_02 from '$lib/images/training_main_002.webp';
+    import Solutions_01 from '$lib/images/consulting.webp';
+    import Solutions_02 from '$lib/images/investigation.webp';
+    import Solutions_03 from '$lib/images/heights-work.webp';
+    import Solutions_04 from '$lib/images/audit.webp';
+    import Solutions_05 from '$lib/images/system-dev.webp';
     import TrainingMain_04 from '$lib/images/training_main_004.webp';
     import TrainingSuite from '$lib/images/training002.webp';
     import TrainingFocus from '$lib/images/training003.png';
@@ -26,7 +29,7 @@
     <div class="wrapper flex-col training-main">
 
         <div class="grid-col-2 align-center">
-            <img src={TrainingMain_01} width="100%" alt="Training">
+            <img src={Solutions_01} width="100%" alt="H&S Advise and Consulting">
             <div class="blurb flex-col gap-8">
                 <h1>H&S Advise and Consulting</h1>
                 <div class="blurb-text flex-col gap-4">
@@ -38,7 +41,7 @@
                     </p>
                 </div>
 
-                <a href="/consult?id=hs-consulting" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/hs-consulting" class="book" target="_blank">Learn more</a>
             </div>
         </div>
 
@@ -55,13 +58,13 @@
                     </p>
                 </div>
 
-                <a href="/consult?id=incident-inv" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/incident-inv" class="book" target="_blank">Inquire Now</a>
             </div>
-            <img src={TrainingMain_04} width="100%" alt="Training">
+            <img src={Solutions_02} width="100%" alt="Incident Investigation">
         </div>
 
         <div class="grid-col-2 align-center">
-            <img src={TrainingMain_02} width="100%" alt="Training">
+            <img src={Solutions_03} width="100%" alt="Height Safety Equipment Inspection">
             <div class="blurb flex-col gap-8">
                 <h1>Height Safety Equipment Inspection</h1>
 
@@ -74,7 +77,7 @@
                     </p>
                 </div>
 
-                <a href="/consult?id=height-safety" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/height-safety" class="book" target="_blank">Inquire Now</a>
             </div>
         </div>
 
@@ -91,13 +94,13 @@
                     </p>
                 </div>
 
-                <a href="/consult?id=workplace-audit" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/workplace-audit" class="book" target="_blank">Inquire Now</a>
             </div>
-            <img src={TrainingMain_04} width="100%" alt="Training">
+            <img src={Solutions_04} width="100%" alt="Workplace Audit">
         </div>
 
         <div class="grid-col-2 align-center">
-            <img src={TrainingMain_02} width="100%" alt="Training">
+            <img src={Solutions_05} width="100%" alt="System Development">
             <div class="blurb flex-col gap-8">
                 <h1>System Development</h1>
 
@@ -110,7 +113,7 @@
                     </p>
                 </div>
 
-                <a href="/consult?id=system-dev" class="book" target="_blank">Inquire Now</a>
+                <a href="/solutions/system-dev" class="book" target="_blank">Inquire Now</a>
             </div>
         </div>
 

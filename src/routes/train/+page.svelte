@@ -13,7 +13,7 @@
         { link: '/train', text: 'Training Inquiry Form' }
     ];
 
-    console.log('Countries', Countries);
+    // console.log('Countries', Countries);
 
     let pending = $state(false);
     let success = $state(false);
@@ -30,6 +30,7 @@
     let message = $state('');
 
     const courseData = createCoursesData();
+    // console.log('courses', courseData.courses);
     const DEFAULT_MESSAGE = 'I would like to get more information on this course.';
 
     /* $effect(() => {
@@ -185,7 +186,7 @@
 
         <div class="contact-form">
             <div class="contact-col flex-col">
-                <h2>Thank you for your interest in our training programs!</h2>
+                <h2 class="text-center mb-4">Thank you for your interest in our training services!</h2>
 
                 <div class="contact-row align-center">
                     <div class="label">Course</div>
@@ -253,7 +254,7 @@
                 <div class="contact-row">
                     <span class="label">Your Message</span>
                     {#if success === true}
-                        <span>{message}</span>
+                        <span>{message || DEFAULT_MESSAGE}</span>
                     {:else}
                         <textarea id="your-inquiry" rows="8" placeholder={DEFAULT_MESSAGE} bind:value={message}></textarea>
                     {/if}

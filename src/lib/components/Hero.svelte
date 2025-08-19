@@ -28,8 +28,9 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        padding: 1.5rem 2rem;
-        background-color: hsla(0, 0%, 50%, 80%);
+        padding: 1.5rem 2.5rem;
+        /* background-color: hsla(0, 0%, 50%, 80%); */
+        background-color: var(--color-primary);
         border: 0;
         border-radius: 1rem;
     }
@@ -37,8 +38,8 @@
         color: var(--color-font-lightest);
         /* color: var(--color-accent); */
         font-size: 2.5rem;
-        font-weight: 200;
-        margin-bottom: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
     }
     .hero-text h3 {
         color: var(--color-font-light);

@@ -66,6 +66,9 @@
 .gap-16 {
     gap: 4rem;
 }
+.mb-4 {
+    margin-bottom:  1rem;
+}
 .align-center {
     align-items: center;
 }

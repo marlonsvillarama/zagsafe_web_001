@@ -51,12 +51,14 @@
         padding: 0.5rem 0.75rem;
     } */
     .title {
-        background-color: var(--color-primary);
+        /* background-color: var(--color-primary); */
+        background-color: var(--color-accent);
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
-        color: white;
+        color: var(--color-font-lightest);
+        /* color: var(--color-font-darkest); */
         font-size: var(--font-2xl);
-        font-weight: 100;
+        font-weight: 300;
         margin-top: -0.5rem;
         /* margin-bottom: 0.5rem; */
         padding: 1.25rem;

@@ -119,7 +119,7 @@
                 email,
                 country: selectedCountry,
                 phone,
-                course: {
+                consult: {
                     id: courseId,
                     title: selectedCourse.title
                 },
@@ -138,7 +138,7 @@
                 email,
                 country: selectedCountry,
                 phone,
-                course: {
+                consult: {
                     id: courseId,
                     title: selectedCourse.title
                 },
@@ -185,7 +185,7 @@
 
         <div class="contact-form">
             <div class="contact-col flex-col">
-                <h2>Thank you for your interest in our consulting services!</h2>
+                <h2 class="text-center mb-4">Thank you for your interest in our consulting services!</h2>
 
                 <div class="contact-row align-center">
                     <div class="label">Service</div>
@@ -249,7 +249,7 @@
                 <div class="contact-row">
                     <span class="label">Your Message</span>
                     {#if success === true}
-                        <span>{message}</span>
+                        <span>{message || DEFAULT_MESSAGE}</span>
                     {:else}
                         <textarea id="your-inquiry" rows="8" placeholder={DEFAULT_MESSAGE} bind:value={message}></textarea>
                     {/if}
