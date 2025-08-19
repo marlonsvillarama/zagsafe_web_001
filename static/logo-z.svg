@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="c" data-name="Layer 5" xmlns="http://www.w3.org/2000/svg" viewBox="140 310 140 190">
+  <defs>
+    <style>
+      .t {
+        fill: #2c62ae;
+      }
+
+      .u {
+        fill: none;
+        stroke: #2d63af;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path class="t" d="M268.57,324.52h-109.63v27.18h71.86l-71.86,108.7v24.88h109.63v-27.18h-72.32l72.32-108.71v-24.87Z"/>
+</svg>

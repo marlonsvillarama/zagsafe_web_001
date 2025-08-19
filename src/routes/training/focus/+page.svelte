@@ -158,6 +158,10 @@
     ];
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Focus Series</title>
+</svelte:head>
+
 <Breadcrumbs {crumbs} />
 
 <h1 class="title">ZagSafe Focus Series</h1>

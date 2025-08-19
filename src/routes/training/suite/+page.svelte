@@ -118,6 +118,10 @@
     };
 </script>
 
+<svelte:head>
+    <title>ZagSafe - Training Suite</title>
+</svelte:head>
+
 <Breadcrumbs {crumbs} />
 
 <h1 class="title">ZagSafe Training Suite</h1>

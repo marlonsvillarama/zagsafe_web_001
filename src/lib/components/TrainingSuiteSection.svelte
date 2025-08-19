@@ -64,14 +64,14 @@
                 {/each}
             </div>
 
-            <div class="cell">
+            <!-- <div class="cell">
                 <h3 class="title">Benefits</h3>
                 <ul>
                     {#each benefits as benefit}
                     <li>{benefit}</li>
                     {/each}
                 </ul>
-            </div>
+            </div> -->
         </div>
 
         <div class="course">
