@@ -3,7 +3,7 @@
 </script>
 
 <div class="howcanihelp">
-    <h1 class="howcanihelp">How can I help you?</h1>
+    <h1 class="howcanihelp">How can we help you?</h1>
     <span>Call or email for a free consultation.</span>
 </div>
 

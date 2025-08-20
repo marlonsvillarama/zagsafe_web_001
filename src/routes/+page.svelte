@@ -40,7 +40,7 @@
             </div>
             <div class="blurb flex-col gap-4">
                 <h1>Zero-Accident Goal&trade;</h1>
-                <p>I will work with you to grow and improve your workplace safety culture, implement effective risk management systems, and make sure your business meets its health and safety legal obligations.</p>
+                <p>We will work with you to grow and improve your workplace safety culture, implement effective risk management systems, and make sure your business meets its health and safety legal obligations.</p>
             </div>
         </div>
 
@@ -63,21 +63,15 @@
         <div class="wrapper grid-col-2">
             <Card
                 link='/solutions'
-                img={CardImage_2}
+                img={CardImage_1}
                 title="Consult"
             />
 
             <Card
                 link='/training'
-                img={CardImage_3}
+                img={CardImage_2}
                 title="Train"
             />
-
-            <!-- <Card
-                img={CardImage_3}
-                title="Inspections and Audits"
-                text="At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization."
-            /> -->
         </div>
 
         <div class="wrapper grid grid-col-2 align-center">
@@ -85,15 +79,15 @@
             <div class="profile flex-col gap-8">
                     <h2>Over 12 years of experience</h2>
                     <p>
-                        I am a dedicated sole trader specializing in health and safety consulting, training, and auditing with over 12 years of international experience in New Zealand, the Middle East, and the Philippines across multiple industries and sectors.
+                        Ken is a dedicated sole trader specializing in health and safety consulting, training, and auditing with over 12 years of international experience in New Zealand, the Middle East, and the Philippines across multiple industries and sectors.
                     </p>
                     <p>
-                        My goal is to ensure your success by delivering fully-measurable improvements in workplace safety and building sustainable safety cultures regardless of industry and location.
+                        Our goal is to ensure your success by delivering fully-measurable improvements in workplace safety and building sustainable safety cultures regardless of industry and location.
                     </p>
-                    <p class="signature flex-col">
+                    <!-- <p class="signature flex-col">
                         <span class="ken">Ken Erol Zagala</span>
                         <span>Founder, ZagSafe</span>
-                    </p>
+                    </p> -->
                 <div class="blurb">
                 </div>
                 <!-- <img class="practnzism" src={NZISM} alt="PractNZISM" /> -->
