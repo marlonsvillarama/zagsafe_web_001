@@ -10,8 +10,6 @@
     import LumberImage from '$lib/images/lumber.webp';
     import ToolsImage from '$lib/images/tools.webp';
     import MetalWorkImage from '$lib/images/metalwork.webp';
-
-    import ContactSection from '$lib/components/ContactSection.svelte';
 </script>
 
 <svelte:head>
@@ -92,10 +90,6 @@
                 </div>
                 <!-- <img class="practnzism" src={NZISM} alt="PractNZISM" /> -->
             </div>
-        </div>
-
-        <div class="wrapper">
-            <ContactSection />
         </div>
     </div>
 </main>
