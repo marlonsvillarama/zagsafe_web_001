@@ -24,14 +24,14 @@
 
 <style>
     .card img {
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
+        border-top-left-radius: clamp(1rem, 2vw, 2rem);
+        border-top-right-radius: clamp(1rem, 2vw, 2rem);
         /* border-radius: 1rem; */
         width: 100%;
         margin-bottom: 0;
     }
     a {
-        border-radius: 2rem;
+        border-radius: clamp(1rem, 2vw, 2rem);
         display: block;
         letter-spacing: 1.25px;
         /* padding: 1.5rem; */
@@ -53,14 +53,14 @@
     .title {
         /* background-color: var(--color-primary); */
         background-color: var(--color-accent);
-        border-bottom-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        border-bottom-right-radius: clamp(1rem, 2vw, 2rem);
+        border-bottom-left-radius: clamp(1rem, 2vw, 2rem);
         color: var(--color-font-lightest);
         /* color: var(--color-font-darkest); */
-        font-size: var(--font-2xl);
-        font-weight: 300;
+        font-size: clamp(1.25rem, 4vw, var(--font-2xl));
+        font-weight: 200;
         margin-top: -0.5rem;
         /* margin-bottom: 0.5rem; */
-        padding: 1.25rem;
+        padding: clamp(1rem, 2vw, 1.25rem);
     }
 </style>

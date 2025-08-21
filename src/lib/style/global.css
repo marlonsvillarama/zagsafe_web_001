@@ -25,24 +25,32 @@ main {
     /* gap: 5rem; */
 }
 main.page {
-    margin-top: 5rem;
+    margin-top: 4.5rem;
+}
+@media (min-width: 64rem) {
+    main.page {
+        margin-top: 5rem;
+    }
 }
 main > .content {
     background-color: var(--color-bg-lightest);
     padding: 7rem 0;
     gap: 8rem;
 }
-p,
 ol,
 ul {
-    font-size: var(--font-md);
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    line-height: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: 300;
-    line-height: 2rem;
+}
+p {
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    line-height: clamp(1.25rem, 4vw, 1.75rem);
 }
 .page-title {
     color: var(--color-accent);
-    font-size: var(--font-3xl);
-    font-weight: bold;
+    font-size: clamp(var(--font-2xl), 4vw, var(--font-3xl));
+    font-weight: 600;
     text-align: center;
 }
 .border {

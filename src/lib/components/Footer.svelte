@@ -3,12 +3,10 @@
 </script>
 
 <footer>
-    <div class="wrapper grid-col-4">
-        <div class="flex-col align-start gap-4">
+    <div class="wrapper">
+        <div class="img">
             <!-- <div class="text-center"> -->
             <img class="footer-logo" src={Logo} alt="ZagSafe" />
-            <div class="social flex-row gap-4 align-center">
-            </div>
             <!-- </div> -->
         </div>
 
@@ -41,18 +39,56 @@
 <style>
     footer {
         color: white;
-        padding: 5rem 0 7rem;
+        padding: 1.5rem 0 7rem;
     }
+    @media (min-width: 64rem) {
+        footer > div {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 5rem 0 7rem;
+        }
+    }
+    footer > div {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    @media (min-width: 48rem) {
+        footer > div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows:auto;
+        }
+    }
+    @media (min-width: 64rem) {
+        footer > div {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    footer .img {
+        text-align: center;
+    }
+    @media (min-width: 48rem) {
+        footer .img {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
     img.footer-logo {
         height: 6rem;
     }
-    .social a {
+    /* .social a {
         display: inline-block;
         align-items: center;
-    }
-    .social a img {
+    } */
+    /* .social a img {
         height: 1.5rem;
-    }
+    } */
     .footer-col {
         gap: 0.25rem;
     }

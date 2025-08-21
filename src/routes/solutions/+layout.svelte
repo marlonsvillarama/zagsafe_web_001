@@ -10,9 +10,14 @@
 
 <style>
     .solutions {
-        padding: 2rem 0 3rem;
+        padding: 1rem 0 2rem;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 0rem;
+    }
+    @media (min-width: 48rem) {
+        .solutions {
+            padding: 2rem 0 3rem;
+        }
     }
 </style>
