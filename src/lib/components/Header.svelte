@@ -40,16 +40,17 @@
                 </div>
             </div>
         </div>
-        <div class="flex-row align-center gap-4">
+        <div class="flex-row align-center gap-6">
+            <a class="contact" href="/contact">
+                Contact Us
+                <!-- <img src={PhoneIcon} alt="Call us" height="24"> -->
+                <!-- <span>022 529 3564</span> -->
+            </a>
             <a class="social" href="https://www.facebook.com/zafacourses" target="_blank">
                 <img src={Facebook} alt="Facebook - ZagSafe">
             </a>
             <a class="social" href="https://www.linkedin.com/company/107793650/admin/page-posts/published/" target="_blank">
                 <img src={LinkedIn} alt="LinkedIn - ZagSafe">
-            </a>
-            <a class="contact" href="/contact">
-                <img src={PhoneIcon} alt="Call us" height="24">
-                <span>022 529 3564</span>
             </a>
         </div>
     </div>

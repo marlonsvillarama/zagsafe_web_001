@@ -5,10 +5,11 @@
 
 <section>
     <div class="hero-img" role="img"></div>
+    <div class="img-overlay"></div>
     <div class="wrapper hero-text">
         <h1>Workplace Safety Simplified</h1>
         <h3>Build safety-first cultures for your workplace.</h3>
-        <!-- <a href="/training">Find out how</a> -->
+        <a href="/solutions">Find out how</a>
     </div>
 </section>
 
@@ -24,13 +25,24 @@
         width: 100%;
         display: block;
     }
+    .img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        /* background-color: rgba(128, 0, 0, 0.5); */
+        /* background: #2C63AFD9; */
+        background: linear-gradient(90deg, rgba(44, 99, 175, 0.85) 0%, rgba(44, 99, 175, 0.1) 70%, rgba(44, 99, 175, 0.4) 100%);
+    }
     .hero-text {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        padding: 1.5rem 2.5rem;
+        /* padding: 1.5rem 2.5rem; */
         /* background-color: hsla(0, 0%, 50%, 80%); */
-        background-color: var(--color-primary);
+        /* background-color: var(--color-primary); */
+        background-color: transparent;
         border: 0;
         border-radius: 1rem;
     }
@@ -39,21 +51,21 @@
         /* color: var(--color-accent); */
         font-size: 2.5rem;
         font-weight: 300;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
     .hero-text h3 {
         color: var(--color-font-light);
         font-size: 1.125rem;
         font-weight: 300;
-        /* margin-bottom: 1.5rem; */
+        margin-bottom: 2rem;
     }
-    /* .hero-text a {
+    .hero-text a {
         display: inline-block;
-        padding: 1rem;
-        background-color: var(--color-primary);
+        padding: 1rem 1.5rem;
+        background-color: var(--color-accent);
         border-radius: 0.5rem;
         color: var(--color-font-lightest);
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         text-decoration: none;
-    } */
+    }
 </style>
