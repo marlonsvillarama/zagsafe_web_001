@@ -21,19 +21,22 @@
 <style>
     ul {
         list-style: none;
+        /* border: 1px solid red; */
+        margin-bottom: 1rem;
     }
     li {
-        display: inline;
+        display: inline-block;
+        align-items: center;
         font-size: var(--font-sm);
     }
     li+li:before {
-        padding: 1rem;
+        padding: 0 1rem;
         content: "\00BB";
         font-weight: bold;
     }
     li a {
-        font-size: var(--font-md);
-        font-weight: 500;
+        font-size: clamp(var(--font-xs), 2vw, var(--font-sm));
+        font-weight: 300;
         text-decoration: none;
         color: var(--color-font-notdark);
         padding-bottom: 0.25rem;

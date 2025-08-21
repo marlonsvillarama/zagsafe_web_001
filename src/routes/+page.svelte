@@ -21,17 +21,18 @@
 
     <div class="content flex-col">
         <!-- <a id="build-safety"></a> -->
-        <div class="wrapper grid-col-2 align-center">
+        <div class="wrapper headline align-center">
+            <!-- <div class="img flex-row justify-center gap-16"> -->
+            <div class="img">
+                <img class="build-safety img-fade-left" src={MetalWorkImage} alt="Build Safety into your DNA" />
+            </div>
             <div class="blurb flex-col gap-4">
                 <h1>Build safety into your DNA</h1>
                 <p>ZagSafe's Zero-Accident Goal &trade; system is based on international best practices for <strong>HSWA 2015</strong> and <strong>ISO 45001:2018</strong>, helping ensure that you get the best solutions tailored for your business.</p>
             </div>
-            <div class="img flex-row justify-center gap-16">
-                <img class="build-safety img-fade-left" src={MetalWorkImage} alt="Build Safety into your DNA" />
-            </div>
         </div>
 
-        <div class="wrapper grid-col-2 align-center">
+        <div class="wrapper headline reverse align-center">
             <div class="img flex-row justify-center gap-16">
                 <img class="zero-accident" src={LumberImage} alt="Zero Accident Goal" />
                 <!-- <img class="practnzism" src={LumberImage} alt="Zero Accident Goal" /> -->
@@ -42,23 +43,23 @@
             </div>
         </div>
 
-        <div class="wrapper grid-col-2 align-center">
+        <div class="wrapper headline align-center">
+            <div class="img flex-row justify-center gap-16">
+                <img class="build-safety img-fade-left" src={ToolsImage} alt="Expert Guidance and Support" />
+            </div>
             <div class="blurb flex-col gap-4">
                 <h1>Expert tailored guidance</h1>
                 <p>At ZagSafe, we provide expert guidance and support on various health and safety advisory services that are tailored specifically for each organization.</p>
             </div>
-            <div class="img flex-row justify-center gap-16">
-                <img class="build-safety img-fade-left" src={ToolsImage} alt="Expert Guidance and Support" />
-            </div>
         </div>
 
-        <div class="wrapper">
-            <div class="headline text-center">
-                <h1>Invest in your health and safety today.</h1>
-            </div>
+        <div class="wrapper text-center">
+            <!-- <div class="headline text-center"> -->
+                <h1 class="cta">Invest in your health and safety today.</h1>
+            <!-- </div> -->
         </div>
 
-        <div class="wrapper grid-col-2">
+        <div class="wrapper cards">
             <Card
                 link='/solutions'
                 img={CardImage_1}
@@ -72,22 +73,22 @@
             />
         </div>
 
-        <div class="wrapper grid grid-col-2 align-center">
-            <img src={Ken_1} class="profile" alt="Ken Erol Zagala">
-            <div class="profile flex-col gap-8">
-                    <h2>Over 12 years of experience</h2>
-                    <p>
-                        Ken is a dedicated sole trader specializing in health and safety consulting, training, and auditing with over 12 years of international experience in New Zealand, the Middle East, and the Philippines across multiple industries and sectors.
-                    </p>
-                    <p>
-                        Our goal is to ensure your success by delivering fully-measurable improvements in workplace safety and building sustainable safety cultures regardless of industry and location.
-                    </p>
-                    <!-- <p class="signature flex-col">
-                        <span class="ken">Ken Erol Zagala</span>
-                        <span>Founder, ZagSafe</span>
-                    </p> -->
-                <div class="blurb">
-                </div>
+        <div class="wrapper ken align-center">
+            <img src={Ken_1} alt="Ken Erol Zagala">
+            <div class="profile">
+                <h2>Over 12 years of experience</h2>
+                <p>
+                    Ken is a dedicated sole trader specializing in health and safety consulting, training, and auditing with over 12 years of international experience in New Zealand, the Middle East, and the Philippines across multiple industries and sectors.
+                </p>
+                <p>
+                    Our goal is to ensure your success by delivering fully-measurable improvements in workplace safety and building sustainable safety cultures regardless of industry and location.
+                </p>
+                <!-- <p class="signature flex-col">
+                    <span class="ken">Ken Erol Zagala</span>
+                    <span>Founder, ZagSafe</span>
+                </p> -->
+                <!-- <div class="blurb">
+                </div> -->
                 <!-- <img class="practnzism" src={NZISM} alt="PractNZISM" /> -->
             </div>
         </div>
@@ -95,50 +96,141 @@
 </main>
 
 <style>
+    .content > div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    @media (min-width: 64rem) {
+        .content > .headline {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
+    .blurb {
+        padding: 0 0.5rem;
+    }
     .blurb h1,
     h2 {
         color: var(--color-accent);
         /* margin-bottom: 0.5rem; */
         margin-left: -0.25rem;
     }
-    .blurb h1 {
-        font-size: var(--font-3xl);
-        font-weight: 100;
+    .blurb > h1 {
+        font-size: clamp(var(--font-xl), 4vw, var(--font-2xl));
+        font-weight: 200;
+        text-align: center;
     }
-    h2 {
-        font-size: var(--font-2xl);
+    @media (min-width: 64rem) {
+        .blurb > h1 {
+            text-align: left;
+        }
+    }
+    .ken h2 {
+        font-size: clamp(var(--font-xl), 4vw, var(--font-2xl));
         font-weight: 300;
-        /* margin-bottom: 1rem; */
+        text-align: center;
+    }
+    @media (min-width: 48rem) {
+        .ken h2 {
+            text-align: left;
+        }
+    }
+    p {
+        font-size: clamp(0.75rem, 2vw, 1rem);
+        line-height: clamp(1.25rem, 4vw, 1.75rem);
     }
     .blurb p:not(:last-child) {
         margin-bottom: 2rem;
     }
-    .headline h1 {
+    /* .headline h1 {
         color: var(--color-accent);
         font-size: var(--font-4xl);
         font-weight: 400;
-    }
+    } */
     img.profile {
         border-radius: 1rem;
         width: 100%;
     }
-    p.signature {
+    /* p.signature {
         gap: 0.5rem;
     }
     p.signature > .ken {
         font-size: var(--font-xl);
         font-weight: 600;
+    } */
+    .img {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* justify-items: center; */
     }
     .img > img {
-        width: 32rem;
-        border-radius: 2rem;
-        box-shadow: var(--shadow);
+        border-radius: clamp(1rem, 2vw, 2rem);
+        width: 100%;
+        /* box-shadow: var(--shadow); */
     }
-    img.practnzism {
-        /* border: 1px solid red; */
+    @media (min-width: 48rem) {
+        .img {
+            display: flex;
+        }
+        .img > img {
+            width: 80%;
+        }
+    }
+    @media (min-width: 64rem) {
+        .img > img {
+            width: clamp(100%, 4vw, 32rem);
+        }
+        .reverse > div:first-child {
+            order: 2;
+        }
+        .reverse > div:last-child {
+            order: 1;
+        }
+    }
+    h1.cta {
+        color: var(--color-accent);
+        font-size: clamp(var(--font-2xl), 4vw, var(--font-3xl));
+        font-weight: 400;
+    }
+    /* img.practnzism {
+        ** border: 1px solid red; **
         padding: 0.25rem 2rem;
-    }
+    } */
     /* .img-fade-left {
         mask-image: linear-gradient(to right, transparent, var(--bg-lightest) 100%);
     } */
+    /* .content > .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    } */
+    @media (min-width: 48rem) {
+        .content > .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
+    .ken img {
+        border-radius: 2rem;
+        width: 100%;
+    }
+    .profile {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0.5rem;
+    }
+    @media (min-width: 48rem) {
+        .content > .ken {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
 </style>

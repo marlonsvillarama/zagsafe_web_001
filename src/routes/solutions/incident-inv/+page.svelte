@@ -15,10 +15,12 @@
 
 <Breadcrumbs {crumbs} />
 
-<h1 class="title">Incident Investigation</h1>
+<h1 class="page-title">Incident Investigation</h1>
 
-<div class="grid grid-training-top">
-    <div class="flex-col details gap-16">
+<div class="solution">
+    <img src={Investigation} alt="Incident Investigation">
+
+    <div class="flex-col details gap-12">
         <div class="text flex-col gap-4">
             <p>
                 <strong>ZagSafe</strong> specializes in professional incident investigations, identifying the underlying causes of accidents, near misses, and safety failures.
@@ -70,24 +72,37 @@
         
         <!-- <Availability online={true} onsite={true} /> -->
     </div>
-
-    <img src={Investigation} alt="Incident Investigation">
 </div>
 
 <style>
-    .title {
-        color: var(--color-accent);
+    .page-title {
+        font-weight: 300;
+        /* color: var(--color-accent); */
     }
-    .grid-training-top {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        /* margin-bottom: 2rem; */
+    .solution {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 2rem;
+        /* border: 1px solid red; */
+    }
+    .solution > img {
+        border-radius: 1rem;
+        width: 100%;
+    }
+    @media (min-width: 64rem) {
+        .solution {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
     }
     /* .grid-training-top > .details {
         gap: 1.25rem;
     } */
-    .details > .text > p {
-        font-size: var(--font-md);
+    .details > .text,
+    .details > .process {
+        padding: 0 0.5rem;
     }
     .process ol {
         list-style-position: inside;
@@ -108,7 +123,6 @@
         border-radius: 0.5rem;
         color: white;
         display: inline-block;
-        font-size: var(--font-lg);
         font-weight: 600;
         text-align: center;
         text-decoration: none;
@@ -119,9 +133,5 @@
     .book:active {
         transform: translateY(2px);
         box-shadow: none;
-    }
-    .grid-training-top > img {
-        width: 100%;
-        border-radius: 1rem;
     }
 </style>

@@ -15,10 +15,12 @@
 
 <Breadcrumbs {crumbs} />
 
-<h1 class="title">Workplace Audit</h1>
+<h1 class="page-title">Workplace Audit</h1>
 
-<div class="grid grid-training-top">
-    <div class="flex-col details gap-16">
+<div class="solution">
+    <img src={Audit} alt="Workplace Audit">
+
+    <div class="flex-col details gap-12">
         <div class="text flex-col gap-4">
             <p>
                 <strong>ZagSafe</strong> delivers independent and comprehensive workplace audits that provide clear and honest assessments of current health and safety performance.
@@ -79,24 +81,35 @@
         
         <!-- <Availability online={true} onsite={true} /> -->
     </div>
-
-    <img src={Audit} alt="Workplace Audit">
 </div>
 
 <style>
-    .title {
-        color: var(--color-accent);
+    .page-title {
+        font-weight: 300;
     }
-    .grid-training-top {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        /* margin-bottom: 2rem; */
+    .solution {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        gap: 2rem;
+    }
+    .solution > img {
+        border-radius: 1rem;
+        width: 100%;
+    }
+    @media (min-width: 64rem) {
+        .solution {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
     }
     /* .grid-training-top > .details {
         gap: 1.25rem;
     } */
-    .details > .text > p {
-        font-size: var(--font-md);
+    .details > .text,
+    .details > .process {
+        padding: 0 0.5rem;
     }
     .process ol {
         list-style-position: inside;
@@ -117,7 +130,6 @@
         border-radius: 0.5rem;
         color: white;
         display: inline-block;
-        font-size: var(--font-lg);
         font-weight: 600;
         text-align: center;
         text-decoration: none;
@@ -128,9 +140,5 @@
     .book:active {
         transform: translateY(2px);
         box-shadow: none;
-    }
-    .grid-training-top > img {
-        width: 100%;
-        border-radius: 1rem;
     }
 </style>

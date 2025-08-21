@@ -30,11 +30,11 @@
 <div class="content flex-col">
     <h1 class="page-title">SOLUTIONS</h1>
 
-    <div class="wrapper flex-col training-main">
+    <div class="wrapper flex-col solution-main">
 
-        <div class="grid-col-2 align-center">
+        <div class="solution">
             <img src={Solutions_01} width="100%" alt="H&S Advise and Consulting">
-            <div class="blurb flex-col gap-8">
+            <div class="blurb flex-col">
                 <h1>H&S Advise and Consulting</h1>
                 <div class="blurb-text flex-col gap-4">
                     <p>
@@ -49,8 +49,9 @@
             </div>
         </div>
 
-        <div class="grid-col-2 align-center">
-            <div class="blurb flex-col gap-8">
+        <div class="solution reverse">
+            <img src={Solutions_02} width="100%" alt="Incident Investigation">
+            <div class="blurb flex-col">
                 <h1>Incident Investigation</h1>
 
                 <div class="blurb-text flex-col gap-4">
@@ -64,12 +65,11 @@
 
                 <a href="/solutions/incident-inv" class="book" target="_blank">Learn more</a>
             </div>
-            <img src={Solutions_02} width="100%" alt="Incident Investigation">
         </div>
 
-        <div class="grid-col-2 align-center">
+        <div class="solution">
             <img src={Solutions_03} width="100%" alt="Height Safety Equipment Inspection">
-            <div class="blurb flex-col gap-8">
+            <div class="blurb flex-col">
                 <h1>Height Safety Equipment Inspection</h1>
 
                 <div class="blurb-text flex-col gap-4">
@@ -85,8 +85,9 @@
             </div>
         </div>
 
-        <div class="grid-col-2 align-center">
-            <div class="blurb flex-col gap-8">
+        <div class="solution reverse">
+            <img src={Solutions_04} width="100%" alt="Workplace Audit">
+            <div class="blurb flex-col">
                 <h1>Workplace Audit</h1>
 
                 <div class="blurb-text flex-col gap-4">
@@ -100,12 +101,11 @@
 
                 <a href="/solutions/workplace-audit" class="book" target="_blank">Learn more</a>
             </div>
-            <img src={Solutions_04} width="100%" alt="Workplace Audit">
         </div>
 
-        <div class="grid-col-2 align-center">
+        <div class="solution">
             <img src={Solutions_05} width="100%" alt="System Development">
-            <div class="blurb flex-col gap-8">
+            <div class="blurb flex-col">
                 <h1>System Development</h1>
 
                 <div class="blurb-text flex-col gap-4">
@@ -127,32 +127,80 @@
 <style>
     .content {
         padding: 0rem 0 5rem;
-        gap: 6rem;
+        gap: 4rem;
     }
-    .training-main {
-        gap: 6rem;
+    @media (min-width: 64rem) {
+        .content {
+            gap: 6rem;
+        }
     }
-    .training-main img {
+    .solution-main {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .solution-main > .solution {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    @media (min-width: 64rem) {
+        .solution-main > .solution {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
+    .solution > img {
+        border-radius: clamp(1rem, 2vw, 2rem);
+        width: 100%;
+    }
+    @media (min-width: 64rem) {
+        .reverse > :first-child {
+            order: 2;
+        }
+        .reverse > :last-child {
+            order: 1;
+        }
+    }
+    /* .training-main img {
         border-radius: 1rem;
-        box-shadow: var(--shadow);
-    }
+        * box-shadow: var(--shadow); *
+    } */
     /* .blurb {
         gap: 3rem;
     } */
-    .blurb h1 {
+     .solution > .blurb {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0.5rem;
+     }
+    .solution > .blurb h1 {
         color: var(--color-accent);
-        font-size: var(--font-2xl);
+        font-size: clamp(var(--font-lg), 4vw, var(--font-2xl));
         font-weight: 200;
+        text-align: center;
     }
-    /* .blurb-text {
-        gap: 1.5rem;
+    @media (min-width: 64rem) {
+        .solution > .blurb h1 {
+            text-align: left;
+        }
+    }
+    /* p {
+        font-size: clamp(0.75rem, 2vw, 1rem);
+        line-height: clamp(1.25rem, 4vw, 1.75rem);
     } */
-    .cta {
+    .blurb-text {
+        gap: 1rem;
+    }
+    /* .cta {
         font-size: var(--font-4xl);
         font-weight: 100;
         color: var(--color-accent);
         text-align: center;
-    }
+    } */
     .book {
         padding: 0.75rem 1.5rem;
         background-color: var(--color-accent);
