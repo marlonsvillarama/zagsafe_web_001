@@ -6,6 +6,11 @@
     --bg-lighter: hsl(0, 0%, 95%);
     --bg-lightest: hsl(0, 0%, 98%);
 
+    --break-xs: 30rem; /* 360px */
+    --break-sm: 48rem; /* 768px */
+    --break-md: 64rem; /* 1024px */
+    --break-xl: 80rem; /* 1280px */
+
     --color-border: hsl(0, 0%, 85%);
     --color-font-notdark: hsl(0, 0%, 50%);
     --color-font-dark: hsl(0, 0%, 30%);
