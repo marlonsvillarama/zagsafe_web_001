@@ -49,15 +49,15 @@
     }
     .hero-text h1 {
         color: var(--color-font-lightest);
-        font-size: clamp(1.375rem, 4vw, 2.5rem);
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
         font-weight: 300;
         margin-bottom: clamp(0.75rem, 2vw, 2rem);
     }
     .hero-text h3 {
         color: var(--color-font-light);
-        font-size: clamp(0.75rem, 2vw, 1.25rem);
+        font-size: clamp(1rem, 2vw, 1.25rem);
         font-weight: 200;
-        margin-bottom: clamp(0.75rem, 2vw, 2rem);
+        margin-bottom: clamp(1.25rem, 2vw, 2rem);
     }
     .hero-text a {
         display: inline-block;
@@ -65,7 +65,7 @@
         background-color: var(--color-accent);
         border-radius: 0.5rem;
         color: var(--color-font-lightest);
-        font-size: clamp(0.75rem, 2vw, 1rem);
+        font-size: clamp(0.875rem, 2vw, 1rem);
         text-decoration: none;
     }
     /* @media (min-width: 48rem) {
