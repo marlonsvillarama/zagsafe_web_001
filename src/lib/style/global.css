@@ -49,6 +49,11 @@ p {
     font-weight: 300;
     line-height: clamp(1.75rem, 4vw, 2rem);
 }
+@media (min-width: 48rem) {
+    p {
+        font-size: 1rem;
+    }
+}
 .page-title {
     color: var(--color-accent);
     font-size: clamp(var(--font-2xl), 4vw, var(--font-3xl));

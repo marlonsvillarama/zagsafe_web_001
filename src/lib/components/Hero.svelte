@@ -49,7 +49,7 @@
     }
     .hero-text h1 {
         color: var(--color-font-lightest);
-        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        font-size: clamp(1.75rem, 2vw, 2.5rem);
         font-weight: 300;
         margin-bottom: clamp(0.75rem, 2vw, 2rem);
     }
