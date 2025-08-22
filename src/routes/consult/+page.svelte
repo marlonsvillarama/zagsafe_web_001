@@ -191,67 +191,67 @@
             <div class="contact-col flex-col">
                 <h2 class="text-center mb-4">Thank you for your interest in our consulting services!</h2>
 
-                <div class="contact-row align-center">
-                    <div class="label">Service</div>
+                <div class="contact-row">
+                    <label for="course">Service</label>
                     {#if success === true}
                         <span>{selectedCourse?.['title']}</span>
                     {:else}
-                        <select bind:value={courseId} onchange={changeCourse}>
+                        <select bind:value={courseId} onchange={changeCourse} id="course">
                             {#each courseData.list as course}
                                 <option value={course.id}>{course.title}</option>
                             {/each}
                         </select>
                     {/if}
                 </div>
-                <div class="contact-row">
-                    <span class="label">Description</span>
+                <div class="contact-row multi">
+                    <label for="">Description</label>
                     <div class="desc">
                         {#each selectedCourse?.['description'] as desc}
                             <span>{desc}</span>
                         {/each}
                     </div>
                 </div>
-                <div class="contact-row align-center">
-                    <div class="label">Your Name</div>
+                <div class="contact-row">
+                    <label for="clientName">Your Name</label>
                     {#if success === true}
                         <span>{clientName}</span>
                     {:else}
-                        <input type="text" bind:value={clientName} />
+                        <input type="text" bind:value={clientName} id="clientName" />
                     {/if}
                 </div>
-                <div class="contact-row align-center">
-                    <div class="label">Email Address</div>
+                <div class="contact-row">
+                    <label for="email">Email Address</label>
                     {#if success === true}
                         <span>{email}</span>
                     {:else}
-                        <input type="email" bind:value={email} />
+                        <input type="email" bind:value={email} id="email" />
                     {/if}
                 </div>
-                <div class="contact-row align-center">
-                    <div class="label">Country</div>
+                <div class="contact-row">
+                    <label for="country">Country</label>
                     {#if success === true}
                         <span>{selectedCountry.name}</span>
                     {:else}
-                        <select bind:value={selectedCountryId} onchange={changeCountry}>
+                        <select bind:value={selectedCountryId} onchange={changeCountry} id="country">
                             {#each Countries as country}
                                 <option value={country.code}>{country.name}</option>
                             {/each}
                         </select>
                     {/if}
                 </div>
-                <div class="contact-row align-center">
-                    <div class="label">Phone Number</div>
+                <div class="contact-row">
+                    <label for="phone">Phone Number</label>
                     {#if success === true}
                         <span>{selectedCountryCallCode} {phone}</span>
                     {:else}
                         <div class="flex-row align-center fld-phone">
                             <input type="text" class="code" disabled bind:value={selectedCountryCallCode} />
-                            <input type="phone" bind:value={phone} />
+                            <input type="phone" bind:value={phone} id="phone" />
                         </div>
                     {/if}
                 </div>
-                <div class="contact-row">
-                    <span class="label">Your Message</span>
+                <div class="contact-row multi">
+                    <label for="message">Your Message</label>
                     {#if success === true}
                         <span>{message || DEFAULT_MESSAGE}</span>
                     {:else}
@@ -303,15 +303,31 @@
     }
     .contact-row {
         width: 100%;
-        display: grid;
-        grid-template-columns: 8rem auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    @media (min-width: 48rem) {
+        .contact-row {
+            display: grid;
+            grid-template-columns: 8rem auto;
+            align-items: center;
+        }
+        .contact-row.multi {
+            align-items: start;
+        }
     }
     .contact-row span {
         line-height: 2rem;
         display: inline-block;
     }
-    .contact-row .label {
+    .contact-row > label {
         font-weight: 600;
+    }
+    @media (min-width: 48rem) {
+        .contact-row.multi > label {
+            margin-top: 0.5rem;
+        }
     }
     .contact-form input[type=email],
     .contact-form input[type=text],
@@ -323,6 +339,7 @@
         border: 1px solid var(--color-border);
         border-radius: 0.5rem;
         background-color: var(--bg-lighter);
+        font-size: var(--font-md);
     }
     .contact-form input[type=phone] {
         width: 10rem;
