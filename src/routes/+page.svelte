@@ -137,10 +137,10 @@
             text-align: left;
         }
     }
-    p {
+    /* p {
         font-size: clamp(0.75rem, 2vw, 1rem);
         line-height: clamp(1.25rem, 4vw, 1.75rem);
-    }
+    } */
     .blurb p:not(:last-child) {
         margin-bottom: 2rem;
     }
@@ -149,10 +149,10 @@
         font-size: var(--font-4xl);
         font-weight: 400;
     } */
-    img.profile {
+    /* img.profile {
         border-radius: 1rem;
         width: 100%;
-    }
+    } */
     /* p.signature {
         gap: 0.5rem;
     }
