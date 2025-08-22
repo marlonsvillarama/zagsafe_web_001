@@ -141,6 +141,9 @@
         font-size: clamp(0.75rem, 2vw, 1rem);
         line-height: clamp(1.25rem, 4vw, 1.75rem);
     } */
+    .blurb p {
+        font-size: clamp(1rem, 3vw, 1rem);
+    }
     .blurb p:not(:last-child) {
         margin-bottom: 2rem;
     }

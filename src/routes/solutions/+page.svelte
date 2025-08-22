@@ -30,7 +30,7 @@
 <div class="content flex-col">
     <h1 class="page-title">SOLUTIONS</h1>
 
-    <div class="wrapper flex-col solution-main">
+    <div class="flex-col solution-main">
 
         <div class="solution">
             <img src={Solutions_01} width="100%" alt="H&S Advise and Consulting">
