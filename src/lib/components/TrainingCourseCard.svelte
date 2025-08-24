@@ -65,7 +65,7 @@
         border-radius: 0.5rem;
         color: white;
         display: inline-block;
-        font-size: var(--font-sm);
+        font-size: var(--font-md);
         text-decoration: none;
     }
     .course .header > .book {
