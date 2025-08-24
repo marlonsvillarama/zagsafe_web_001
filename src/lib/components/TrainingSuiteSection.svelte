@@ -176,16 +176,17 @@
         padding: 1rem;
         background-color: var(--color-accent);
         color: white;
-        font-size: var(--font-lg);
-        font-weight: 600;
+        font-size: var(--font-md);
+        /* font-size: var(--font-lg); */
+        /* font-weight: 600; */
         width: 100%;
         border-radius: 0.5rem;
         border: 0;
         cursor: pointer;
     }
-    @media (min-width: 48rem) {
+    /* @media (min-width: 48rem) {
         .booknow button {
             font-size: var(--font-md);
         }
-    }
+    } */
 </style>
