@@ -124,65 +124,95 @@
 
 <Breadcrumbs {crumbs} />
 
-<h1 class="title">ZagSafe Training Suite</h1>
+<div class="training">
+    <h1 class="page-title">Training Suite</h1>
 
-<div class="grid grid-training-top">
-    <div class="flex-col details">
-        <Availability online={true} onsite={true} />
-        <p>
-            The <strong>ZagSafe Training Suite</strong> is a comprehensive three-tiered professional development programmes designed to build safer workplaces and stronger professionals.
-        </p>
-        <p>
-            Each programme is structured to provide practical skills, regulatory compliance knowledge, and leadership capability to help individuals and organisations achieve world-class safety outcomes.
-        </p>
-        <p>
-            Whether you are an individual learner or a company with team-wide training needs, each programme is delivered using interactive methods include case studies, group activities, simulations, and trainer-led discussions.
-        </p>
+    <div class="grid grid-training-top">
+        <img src={ImageSuite} alt="ZagSafe Training Suite">
+        <div class="flex-col details">
+            <Availability online={true} onsite={true} />
+            <p>
+                The <strong>ZagSafe Training Suite</strong> is a comprehensive three-tiered professional development programmes designed to build safer workplaces and stronger professionals.
+            </p>
+            <p>
+                Each programme is structured to provide practical skills, regulatory compliance knowledge, and leadership capability to help individuals and organisations achieve world-class safety outcomes.
+            </p>
+            <p>
+                Whether you are an individual learner or a company with team-wide training needs, each programme is delivered using interactive methods include case studies, group activities, simulations, and trainer-led discussions.
+            </p>
+        </div>
     </div>
-    <img src={ImageSuite} alt="ZagSafe Training Suite">
+
+    <TrainingSuiteSection
+        id="suite-start"
+        title="Program 1 - ZagSafe START"
+        benefits={START.benefits}
+        audience={START.audience}
+        deliveries={START.deliveries}
+        description={START.description}
+        duration={START.duration}
+        course={START.course}
+    />
+
+    <TrainingSuiteSection
+        id="suite-pro"
+        title={PRO.title}
+        benefits={PRO.benefits}
+        audience={PRO.audience}
+        deliveries={PRO.deliveries}
+        description={PRO.description}
+        duration={PRO.duration}
+        course={PRO.course}
+    />
+
+    <TrainingSuiteSection
+        id="suite-task"
+        title={TASK.title}
+        benefits={TASK.benefits}
+        audience={TASK.audience}
+        deliveries={TASK.deliveries}
+        description={TASK.description}
+        duration={TASK.duration}
+        course={TASK.course}
+    />
 </div>
 
-<TrainingSuiteSection
-    id="suite-start"
-    title="Program 1 - ZagSafe START"
-    benefits={START.benefits}
-    audience={START.audience}
-    deliveries={START.deliveries}
-    description={START.description}
-    duration={START.duration}
-    course={START.course}
-/>
-
-<TrainingSuiteSection
-    id="suite-pro"
-    title={PRO.title}
-    benefits={PRO.benefits}
-    audience={PRO.audience}
-    deliveries={PRO.deliveries}
-    description={PRO.description}
-    duration={PRO.duration}
-    course={PRO.course}
-/>
-
-<TrainingSuiteSection
-    id="suite-task"
-    title={TASK.title}
-    benefits={TASK.benefits}
-    audience={TASK.audience}
-    deliveries={TASK.deliveries}
-    description={TASK.description}
-    duration={TASK.duration}
-    course={TASK.course}
-/>
-
 <style>
-    .title {
+    /* .title {
         color: var(--color-accent);
+    } */
+    .training {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
+    /* .page-title {
+        margin-bottom: 2rem;
+    } */
     .grid-training-top {
-        grid-template-columns: 2fr 1fr;
-        gap: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
         /* margin-bottom: 2rem; */
+    }
+    @media (min-width: 48rem) {
+        .grid-training-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            /* margin-bottom: 2rem; */
+        }
+        .grid-training-top .details {
+            order: 1;
+        }
+        .grid-training-top img {
+            order: 2;
+        }
+    }
+    @media (min-width: 64rem) {
+        .grid-training-top {
+            grid-template-columns: 3fr 2fr;
+        }
     }
     .grid-training-top > .details {
         gap: 1.25rem;

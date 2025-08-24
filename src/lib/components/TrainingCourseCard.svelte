@@ -32,6 +32,8 @@
     {#if outcome}
     <p class="outcome"><strong>Outcomes:</strong> {outcome}</p>
     {/if}
+
+    <a href="/train?id={id}" class="book" target="_blank">Inquire Now</a>
 </div>
 
 <style>
@@ -65,6 +67,17 @@
         display: inline-block;
         font-size: var(--font-sm);
         text-decoration: none;
+    }
+    .course .header > .book {
+        display: none;
+    }
+    @media (min-width: 64rem) {
+        .course .header > .book {
+            display: inline-block;
+        }
+        .course > .book {
+            display: none;
+        }
     }
     .course .book:hover {
         box-shadow: var(--shadow-btn);

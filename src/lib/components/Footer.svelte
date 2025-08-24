@@ -39,7 +39,7 @@
 <style>
     footer {
         color: white;
-        padding: 1.5rem 0 7rem;
+        padding: 1.5rem 0 5rem;
     }
     @media (min-width: 64rem) {
         footer > div {

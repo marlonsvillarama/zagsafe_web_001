@@ -27,9 +27,9 @@
 <div class="content flex-col">
     <h1 class="page-title">TRAINING</h1>
 
-    <div class="wrapper flex-col training-main">
+    <div class="flex-col training-main">
 
-        <div class="grid-col-2 align-center">
+        <div class="training">
             <img src={TrainingMain_01} width="100%" alt="Training">
             <div class="blurb flex-col">
                 <h1>High-quality, practical programmes</h1>
@@ -47,7 +47,8 @@
             </div>
         </div>
 
-        <div class="grid-col-2 align-center">
+        <div class="training reverse">
+            <img src={TrainingMain_04} width="100%" alt="Training">
             <div class="blurb flex-col">
                 <h1>Theory and application</h1>
 
@@ -59,10 +60,9 @@
 
                 <!-- <button>Learn more</button> -->
             </div>
-            <img src={TrainingMain_04} width="100%" alt="Training">
         </div>
 
-        <div class="grid-col-2 align-center">
+        <div class="training">
             <img src={TrainingMain_02} width="100%" alt="Training">
             <div class="blurb flex-col">
                 <h1>Empower critical thinking</h1>
@@ -84,7 +84,7 @@
 
     <h1 class="cta">Build a safer workplace now.</h1>
         
-    <div class="wrapper grid-col-3">
+    <div class="cards">
         <ImageCard
             img={TrainingSuite}
             title="Suite"
@@ -111,28 +111,82 @@
 <style>
     .content {
         padding: 0rem 0 5rem;
-        gap: 6rem;
+        gap: 4rem;
+    }
+    @media (min-width: 64rem) {
+        .content {
+            gap: 6rem;
+        }
     }
     .training-main {
+        display: flex;
+        flex-direction: column;
+        gap: 8rem;
+    }
+    .training-main > .training {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    @media (min-width: 64rem) {
+        .training-main > .training {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+    }
+    .training > img {
+        border-radius: clamp(1rem, 2vw, 2rem);
+        width: 100%;
+    }
+    @media (min-width: 64rem) {
+        .reverse > :first-child {
+            order: 2;
+        }
+        .reverse > :last-child {
+            order: 1;
+        }
+    }
+    /* .training-main {
         gap: 6rem;
-    }
-    .training-main img {
+    } */
+    /* .training-main img {
         border-radius: 1rem;
-        box-shadow: var(--shadow);
+    } */
+    .training > .blurb {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 0.5rem;
+     }
+    .training > .blurb h1 {
+        color: var(--color-accent);
+        font-size: clamp(var(--font-lg), 4vw, var(--font-2xl));
+        font-weight: 200;
+        text-align: center;
     }
-    .blurb {
+    @media (min-width: 64rem) {
+        .training > .blurb h1 {
+            text-align: left;
+        }
+    }
+    .blurb-text {
+        gap: 1rem;
+    }
+    /* .blurb {
         gap: 3rem;
-    }
-    .blurb h1 {
+    } */
+    /* .blurb h1 {
         color: var(--color-accent);
         font-size: var(--font-2xl);
         font-weight: 200;
-    }
-    .blurb-text {
+    } */
+    /* .blurb-text {
         gap: 1.5rem;
-    }
+    } */
     .cta {
-        font-size: var(--font-4xl);
+        font-size: clamp(var(--font-2xl), 4vw, var(--font-4xl));
         font-weight: 100;
         color: var(--color-accent);
         text-align: center;
@@ -148,4 +202,15 @@
         padding: 0.75rem 1.5rem;
         cursor: pointer;
     } */
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    @media (min-width: 64rem) {
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
 </style>

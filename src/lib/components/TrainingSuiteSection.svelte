@@ -19,6 +19,17 @@
     <div class="title">{title}</div>
 
     <div class="grid-area-training pos-relative">
+        <div class="cell audience">
+            <div>
+                <h3 class="title">This program is perfect for you if you are:</h3>
+                <ul>
+                    {#each audience as aud}
+                    <li>{aud}</li>
+                    {/each}
+                </ul>
+            </div>
+        </div>
+
         <div class="benefits flex-col">
             <div class="cell">
                 <h3 class="title">Benefits</h3>
@@ -42,17 +53,6 @@
                         {/each}
                     </p>
                 </div>
-            </div>
-        </div>
-
-        <div class="cell audience pos-absolute">
-            <div>
-                <h3 class="title">This program is perfect for you if you are:</h3>
-                <ul>
-                    {#each audience as aud}
-                    <li>{aud}</li>
-                    {/each}
-                </ul>
             </div>
         </div>
 
@@ -105,15 +105,22 @@
         padding: 0.75rem 1.25rem;
     }
     .grid-area-training {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            ". benefits"
-            ". program"
-            ". course"
-            ". booknow";
-        column-gap: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    @media (min-width: 64rem) {
+        .grid-area-training {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                ". benefits"
+                ". program"
+                ". course"
+                ". booknow";
+            column-gap: 4rem;
+        }
     }
     /* .grid-area-2xauto > * {
         border: 1px solid red;
@@ -142,10 +149,16 @@
         background-color: var(--color-border);
         padding: 1rem 2rem;
         border-radius: 1rem;
-        top: 1rem;
-        left: 0;
-        min-width: 30rem;
-        max-width: 30rem;
+        width: 100%;
+    }
+    @media (min-width: 64rem) {
+        .audience {
+            position: absolute;
+            top: 1rem;
+            left: 0;
+            min-width: 30rem;
+            max-width: 30rem;
+        }
     }
     .benefits {
         grid-area: benefits;
@@ -163,7 +176,7 @@
         padding: 1rem;
         background-color: var(--color-accent);
         color: white;
-        font-size: var(--font-lg);
+        /* font-size: var(--font-lg); */
         font-weight: 600;
         width: 100%;
         border-radius: 0.5rem;

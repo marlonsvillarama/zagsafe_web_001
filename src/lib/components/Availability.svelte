@@ -28,6 +28,12 @@
 <style>
     .availability {
         gap: 0.5rem;
+        justify-content: center;
+    }
+    @media (min-width: 48rem) {
+        .availability {
+            justify-content: flex-start;
+        }
     }
     .avail {
         gap: 0.75rem;

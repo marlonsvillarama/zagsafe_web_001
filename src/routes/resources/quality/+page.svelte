@@ -66,10 +66,10 @@
         width: 100%;
         max-width: 60rem;
     }
-    .page-title {
+    /* .page-title {
         font-size: var(--font-2xl);
         font-weight: 500;
-    }
+    } */
     .par {
         line-height: 2rem;
         font-size: var(--font-md);
@@ -81,11 +81,11 @@
         font-size: var(--font-md);
         font-weight: 300;
     }
-    .email {
+    /* .email {
         font-weight: 500;
-    }
-    .sign {
+    } */
+    /* .sign {
         color: var(--color-primary);
         font-size: var(--font-xl);
-    }
+    } */
 </style>

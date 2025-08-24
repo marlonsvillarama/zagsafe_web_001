@@ -171,7 +171,7 @@
     /* .blurb {
         gap: 3rem;
     } */
-     .solution > .blurb {
+    .solution > .blurb {
         display: flex;
         flex-direction: column;
         gap: 1rem;
