@@ -176,7 +176,7 @@
         padding: 1rem;
         background-color: var(--color-accent);
         color: white;
-        font-size: var(--font-xl);
+        font-size: var(--font-lg);
         font-weight: 600;
         width: 100%;
         border-radius: 0.5rem;
