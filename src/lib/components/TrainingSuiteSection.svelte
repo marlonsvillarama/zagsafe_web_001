@@ -86,7 +86,7 @@
         </div>
 
         <div class="booknow">
-            <button type="button" onclick={gotoInquire}>INQUIRE NOW</button>
+            <button type="button" onclick={gotoInquire}>Inquire Now</button>
         </div>
     </div>
 </div>
@@ -176,11 +176,16 @@
         padding: 1rem;
         background-color: var(--color-accent);
         color: white;
-        /* font-size: var(--font-lg); */
+        font-size: var(--font-xl);
         font-weight: 600;
         width: 100%;
         border-radius: 0.5rem;
         border: 0;
         cursor: pointer;
+    }
+    @media (min-width: 48rem) {
+        .booknow button {
+            font-size: var(--font-md);
+        }
     }
 </style>

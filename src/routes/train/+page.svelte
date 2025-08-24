@@ -339,6 +339,7 @@
     .contact-form input[type=phone],
     .contact-form select,
     .contact-form textarea {
+        display: inline-block;
         width: 100%;
         padding: 0.75rem 1rem;
         border: 1px solid var(--color-border);
