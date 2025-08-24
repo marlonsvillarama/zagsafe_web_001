@@ -164,48 +164,76 @@
 
 <Breadcrumbs {crumbs} />
 
-<h1 class="title">ZagSafe Focus Series</h1>
+<div class="training">
+    <h1 class="page-title">Focus Series</h1>
 
-<div class="grid grid-training-top">
-    <div class="flex-col details">
-        <Availability online={true} onsite={true} />
-        <p>
-            <strong>ZagSafe Focus</strong> provides specialised training designed to address specific workplace risks across multiple industries and roles.
-        </p>
-        <p>
-            Each module is short, practical, and outcome-driven, giving participants the tools to manage targeted challenges such as hazard identification, mental health, ergonomics, emergency response, or leadership in safety culture.
-        </p>
-        <p>By concentrating on specific areas, <strong>ZagSafe Focus</strong> helps organisations strengthen critical aspects of their health and safety systems without unnecessary complexity.</p>
-        <!-- <p>
-            The <strong>ZagSafe Focus Series</strong> is a is a collection of targeted 3-hour training modules designed to address key operational safety topics across all industries. Each session is skills-focused, outcome-driven, and compliant with the New Zealand regulations and international best practices.
-        </p>
-        <p>
-            Ideal for upskilling workers, supervisors, and safety representatives, this series is perfect for toolbox refreshers, onboardng, and compliance requirements.
-        </p> -->
+    <div class="grid grid-training-top">
+        <img src={ImageFocus} alt="ZagSafe Focus Series">
+        <div class="flex-col details">
+            <Availability online={true} onsite={true} />
+            <p>
+                <strong>ZagSafe Focus</strong> provides specialised training designed to address specific workplace risks across multiple industries and roles.
+            </p>
+            <p>
+                Each module is short, practical, and outcome-driven, giving participants the tools to manage targeted challenges such as hazard identification, mental health, ergonomics, emergency response, or leadership in safety culture.
+            </p>
+            <p>By concentrating on specific areas, <strong>ZagSafe Focus</strong> helps organisations strengthen critical aspects of their health and safety systems without unnecessary complexity.</p>
+            <!-- <p>
+                The <strong>ZagSafe Focus Series</strong> is a is a collection of targeted 3-hour training modules designed to address key operational safety topics across all industries. Each session is skills-focused, outcome-driven, and compliant with the New Zealand regulations and international best practices.
+            </p>
+            <p>
+                Ideal for upskilling workers, supervisors, and safety representatives, this series is perfect for toolbox refreshers, onboardng, and compliance requirements.
+            </p> -->
+        </div>
     </div>
-    <img src={ImageFocus} alt="ZagSafe Focus Series">
-</div>
 
-<div class="cells">
-    {#each courses as course}
-    <TrainingCourseCard
-        id={course.id}
-        title={course.title}
-        description={course.description}
-        outcome={course.outcome}
-    />
-    {/each}
+    <div class="cells">
+        {#each courses as course}
+        <TrainingCourseCard
+            id={course.id}
+            title={course.title}
+            description={course.description}
+            outcome={course.outcome}
+        />
+        {/each}
+    </div>
 </div>
 
 <style>
-    .title {
-        color: var(--color-accent);
+    .training {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
     .grid-training-top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    @media (min-width: 48rem) {
+        .grid-training-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            /* margin-bottom: 2rem; */
+        }
+        .grid-training-top .details {
+            order: 1;
+        }
+        .grid-training-top img {
+            order: 2;
+        }
+    }
+    @media (min-width: 64rem) {
+        .grid-training-top {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+    /* .grid-training-top {
         grid-template-columns: 2fr 1fr;
         gap: 3rem;
-        /* margin-bottom: 2rem; */
-    }
+    } */
     .grid-training-top > .details {
         gap: 1.25rem;
     }
@@ -218,11 +246,18 @@
     }
 
     .cells {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
-        grid-auto-rows: min-content;
-        row-gap: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
         margin-bottom: 4rem;
+    }
+    @media (min-width: 48rem) {
+        .cells {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            grid-auto-rows: min-content;
+            row-gap: 6rem;
+        }
     }
 </style>

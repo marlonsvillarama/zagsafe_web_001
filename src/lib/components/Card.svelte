@@ -62,5 +62,6 @@
         margin-top: -0.5rem;
         /* margin-bottom: 0.5rem; */
         padding: clamp(1rem, 2vw, 1.25rem);
+        width: 100%;
     }
 </style>

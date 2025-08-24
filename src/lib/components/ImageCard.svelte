@@ -45,6 +45,7 @@
         width: 100%; */
         top: 0;
         left: 0;
+        right: 0;
         bottom: 0;
         /* border: 1px solid red; */
         display: flex;
@@ -54,22 +55,27 @@
     .cover {
         /* border: 1px solid red; */
         height: 100%;
-        padding: 3rem;
+        padding: 2rem;
         /* padding: clamp(1rem, 2rem, 3rem); */
         display: flex;
         flex-direction: column;
         position: relative;
         /* justify-content: space-between; */
     }
+    @media (min-width: 48rem) {
+        .cover {
+            padding: 2.5rem;
+        }
+    }
     .title {
         color: var(--color-accent);
-        font-size: clamp(var(--font-lg), 4vw, var(--font-4xl));
+        font-size: clamp(var(--font-2xl), 4vw, var(--font-4xl));
         font-weight: bold;
     }
     .blurb {
         color: white;
         font-size: var(--font-md);
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 0.5px;
         margin-top: 1rem;
         /* position: absolute;
@@ -87,8 +93,8 @@
         color: white;
         cursor: pointer;
         background-color: var(--color-primary);
-        font-size: var(--font-lg);
-        font-weight: 600;
+        font-size: var(--font-md);
+        font-weight: 300;
         letter-spacing: 0.75px;
         text-align: center;
         text-decoration: none;

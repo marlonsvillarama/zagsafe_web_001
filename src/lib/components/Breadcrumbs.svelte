@@ -30,7 +30,7 @@
         font-size: var(--font-sm);
     }
     li+li:before {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
         content: "\00BB";
         font-weight: bold;
     }

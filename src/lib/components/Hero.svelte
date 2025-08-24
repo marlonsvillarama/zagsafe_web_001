@@ -55,7 +55,7 @@
     }
     .hero-text h3 {
         color: var(--color-font-light);
-        font-size: clamp(0.75rem, 2vw, 1.5rem);
+        font-size: clamp(1rem, 2vw, 1.5rem);
         font-weight: 200;
         margin-bottom: clamp(1.25rem, 2vw, 2rem);
     }

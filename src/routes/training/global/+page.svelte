@@ -143,55 +143,83 @@
 
 <Breadcrumbs {crumbs} />
 
-<h1 class="title">ZagSafe Global Series</h1>
+<div class="training">
+    <h1 class="page-title">Global Series</h1>
 
-<div class="grid grid-training-top">
-    <div class="flex-col details">
-        <Availability online={true} />
-        <p>
-            The <strong>ZagSafe Global Series</strong> delivers international standard training that equips participants with the knowledge and tools to meet global best practice standards in health, safety, leadership, education, information technology, sustainabililty, business, and risk management.
-        </p>
-        <p>
-            Focused on high-risk industries and cross-border operations, this series bridges international frameworks such as ISO, ILO, and regional regulatory systems to help businesses align with global compliance expectations.
-        </p>
-        <p>
-            All <strong>ZagSafe Global Series</strong> training programs are fully-online and are conducted via live virtual classrooms supported by digital learning materials, case studies, and interactive activities.
-        </p>
-        <!-- <p>
-            The <strong>ZagSafe Global Series</strong> features advanced training programs designed to upskill professionals, leaders, and facilitators in safety, sustainability, leadership, and operational excellence. These programs go beyond compliance to foster competence, innovation, and global alignment with best practices.
-        </p>
-        <p>
-            All <strong>ZagSafe Global Series</strong> training programs are fully-online and are conducted via live virtual classrooms supported by digital learning materials, case studies, and interactive activities.
-        </p>
-        <p>
-            Upon successful completion, participants will receive a <strong>ZagSafe International Certificate of Achievement</strong>, recognising their professional development aligned with global standards such as <strong>ISO</strong>, <stong>ICAO</stong>, <strong>PMBOK</strong>, <strong>WHO</strong>, and <strong>ILO</strong>.
-        </p> -->
+    <div class="grid grid-training-top">
+        <img src={ImageFocus} alt="ZagSafe Focus Series">
+        <div class="flex-col details">
+            <Availability online={true} />
+            <p>
+                The <strong>ZagSafe Global Series</strong> delivers international standard training that equips participants with the knowledge and tools to meet global best practice standards in health, safety, leadership, education, information technology, sustainabililty, business, and risk management.
+            </p>
+            <p>
+                Focused on high-risk industries and cross-border operations, this series bridges international frameworks such as ISO, ILO, and regional regulatory systems to help businesses align with global compliance expectations.
+            </p>
+            <p>
+                All <strong>ZagSafe Global Series</strong> training programs are fully-online and are conducted via live virtual classrooms supported by digital learning materials, case studies, and interactive activities.
+            </p>
+            <!-- <p>
+                The <strong>ZagSafe Global Series</strong> features advanced training programs designed to upskill professionals, leaders, and facilitators in safety, sustainability, leadership, and operational excellence. These programs go beyond compliance to foster competence, innovation, and global alignment with best practices.
+            </p>
+            <p>
+                All <strong>ZagSafe Global Series</strong> training programs are fully-online and are conducted via live virtual classrooms supported by digital learning materials, case studies, and interactive activities.
+            </p>
+            <p>
+                Upon successful completion, participants will receive a <strong>ZagSafe International Certificate of Achievement</strong>, recognising their professional development aligned with global standards such as <strong>ISO</strong>, <stong>ICAO</stong>, <strong>PMBOK</strong>, <strong>WHO</strong>, and <strong>ILO</strong>.
+            </p> -->
+        </div>
     </div>
-    <img src={ImageFocus} alt="ZagSafe Focus Series">
-</div>
 
-<div class="cells">
-    {#each courses as course}
-    <TrainingCourseCard
-        id={course.id}
-        title={course.title}
-        subtitle={course.subtitle}
-        heading={course.heading}
-        description={course.description}
-        outcome={course.outcome}
-    />
-    {/each}
+    <div class="cells">
+        {#each courses as course}
+        <TrainingCourseCard
+            id={course.id}
+            title={course.title}
+            subtitle={course.subtitle}
+            heading={course.heading}
+            description={course.description}
+            outcome={course.outcome}
+        />
+        {/each}
+    </div>
 </div>
 
 <style>
-    .title {
-        color: var(--color-accent);
+    .training {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
     }
     .grid-training-top {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    @media (min-width: 48rem) {
+        .grid-training-top {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            /* margin-bottom: 2rem; */
+        }
+        .grid-training-top .details {
+            order: 1;
+        }
+        .grid-training-top img {
+            order: 2;
+        }
+    }
+    @media (min-width: 64rem) {
+        .grid-training-top {
+            grid-template-columns: 3fr 2fr;
+        }
+    }
+    /* .grid-training-top {
         grid-template-columns: 2fr 1fr;
         gap: 3rem;
-        /* margin-bottom: 2rem; */
-    }
+    } */
     .grid-training-top > .details {
         gap: 1.25rem;
     }
@@ -203,12 +231,27 @@
         border-radius: 1rem;
     }
 
-    .cells {
+    /* .cells {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 4rem;
         grid-auto-rows: min-content;
         row-gap: 6rem;
         margin-bottom: 4rem;
+    } */
+    .cells {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        margin-bottom: 4rem;
+    }
+    @media (min-width: 48rem) {
+        .cells {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 4rem;
+            grid-auto-rows: min-content;
+            row-gap: 6rem;
+        }
     }
 </style>
